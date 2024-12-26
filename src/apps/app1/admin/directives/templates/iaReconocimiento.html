@@ -1,0 +1,199 @@
+<div ng-form name="this_form" class="col-xs-12 back_gray iaReconocimiento" style="padding: 1em 2em;">
+    <p class="titulo_obt" style="font-size: 18px; color: #FFFFFF" ng-show="mode === 'agregar'">Agregar Patron</p>
+    <p class="titulo_obt" style="font-size: 18px; color: #FFFFFF" ng-show="mode === 'editar'">Editar Patron</p>
+    <div class="row">
+        <div class="one_r">
+            <div class="col-xs-2">
+                <p class="p_sp">URL SEMILLA:</p>
+            </div>
+            <div class="col-xs-10 col_special">
+                <input class="input_white" ng-model="dx.urlSemilla" style="font-size: 15px;" 
+                       placeholder = "*URL SEMILLA" ng-disabled="mode === 'editar'"
+                       ng-class="{'ui-select-disabled-event-i': mode === 'editar'}" required/>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="row">
+        <div class="one_r">
+            <div class="col-xs-2">
+                <p class="p_sp">CATEGORÍA:</p>
+            </div>
+            <div class="col-xs-10 col_special">
+                <ui-select ng-model="dx.prioridad" name="" required>
+                    <ui-select-match placeholder="*SELECCIONE CATEGORÍA">{{$select.selected.nombre}}</ui-select-match>
+                    <ui-select-choices repeat="x in get_list_prioridad | filter: $select.search">
+                        <span ng-bind-html="x.nombre"></span>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="row">
+        <div class="one_r">
+            <div class="col-xs-2">
+                <p class="p_sp">URL SEGUIMIENTO:</p>
+            </div>
+            <div class="col-xs-10 col_special">
+                <!--<textarea type="text" ng-model="dx.ArrayUrlSeguimiento" class="text_inarea_recono" placeholder=""></textarea>-->
+                <tags-input ng-model="dx.ArrayUrlSeguimiento" placeholder="Agregar URL" class="text_inarea_recono"></tags-input>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="one_r">
+            <div class="col-xs-2">
+                <p class="p_sp">PALABRAS CLAVE:</p>
+            </div>
+            <div class="col-xs-10 col_special">
+                <!--<textarea type="text" ng-model="dx.ArrayKeyWords" class="text_inarea_recono" placeholder=""></textarea>-->
+                <tags-input ng-model="dx.ArrayKeyWords" placeholder="Agregar palabra clave" class="text_inarea_recono"></tags-input>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="one_r">
+            <div class="col-xs-6">
+                <div class="" style="float: right;">
+                    <input type="radio" class="radiobs" name="isActivo" value="true" ng-model="dx.activo" ng-required="!dx.activo"/>
+                    <label>ACTIVO</label>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="" style="float: left;">
+                    <input type="radio" class="radiobs" name="isActivo" value="false" ng-model="dx.activo" ng-required="!dx.activo"/>
+                    <label>INACTIVO</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <button class="btn dark_blue_btn" style="float: right;" ng-click="agregarPatron()">
+            Agregar Patron
+        </button>
+    </div>
+    <div class="row" style="margin-top: -20px;">
+        <div class="one_r">
+            <p class="titulo_obt" style="font-size: 18px; color: #FFFFFF; margin: 0;">PATRONES</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="one_r">
+            <table class="table table_header_recono">
+                <tr class="tr_manage_recono">
+                    <th>ID</th>
+                    <th>ATRIBUTO</th>
+                    <th>RECUPERA</th>
+                    <th>PATRON</th>
+                </tr>
+            </table>
+            <div class="col-xs-12 col_special div_table_content">
+                <table class="table table_content_recono">
+                    <tr class="td_manage_recono" ng-repeat="x in dx.patrones" 
+                        ng-class="{'tr_manage_recono_selected': x.selected === true}"
+                        ng-click="editarPatron(x)">
+                        <td>{{x.id}}</td>
+                        <td>{{x.atributo}}</td>
+                        <td>{{x.recupera}}</td>
+                        <td style="text-align: left">{{x.patron}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-show="currentPatron.accion" ng-form name="item_form">
+        <div class="one_r">
+            <p class="titulo_obt" style="font-size: 18px; color: #FFFFFF; margin: 0;" ng-show="currentPatron.accion === 'agregar'">NUEVO PATRON</p>
+            <p class="titulo_obt" style="font-size: 18px; color: #FFFFFF; margin: 0;" ng-show="currentPatron.accion === 'editar'">EDITAR PATRON</p>
+        </div>
+        <div class="one_r">
+            <div class="col-xs-2">
+                <p class="p_sp">ID:</p>
+            </div>
+            <div class="col-xs-10 col_special">
+                <ui-select ng-model="currentPatron.tipo" required>
+                    <ui-select-match placeholder="*SELECCIONE">{{$select.selected.nombre}}</ui-select-match>
+                    <ui-select-choices repeat="x in get_list_patron_tipo | filter: $select.search">
+                        <span ng-bind-html="x.nombre"></span>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+        <div class="one_r">
+            <div class="col-xs-2">
+                <p class="p_sp">ATRIBUTO:</p>
+            </div>
+            <div class="col-xs-10 col_special" style="margin-bottom: 0.25em;">
+                <textarea class="text_inarea_patron" ng-model="currentPatron.atributo" style="font-size: 15px;" 
+                          placeholder = "ATRIBUTO" >
+                </textarea>
+            </div>
+        </div> 
+        <div class="one_r">
+            <div class="col-xs-2">
+                <p class="p_sp">RECUPERA:</p>
+            </div>
+            <div class="col-xs-10 col_special">
+                <ui-select ng-model="currentPatron.recupera" required>
+                    <ui-select-match placeholder="*SELECCIONE">{{$select.selected.nombre}}</ui-select-match>
+                    <ui-select-choices repeat="x in get_list_patron_recupera | filter: $select.search">
+                        <span ng-bind-html="x.nombre"></span>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+        <div class="one_r">
+            <div class="col-xs-2">
+                <p class="p_sp">PATRON:</p>
+            </div>
+            <div class="col-xs-10 col_special" style="margin-bottom: 0.25em;">
+                <textarea class="text_inarea_patron" ng-model="currentPatron.patron" style="font-size: 15px;" 
+                          placeholder = "*PATRON" required >
+                </textarea>
+            </div>
+        </div>        
+        <div class="row" style="margin-top: 0.5em;">
+            <div class="col-xs-7">&nbsp;</div>
+            <div class="col-xs-5 no_left_margin" ng-show="currentPatron.accion">
+                <div class="row">
+                    <div class="col-xs-6 no_left_margin">
+                        <div style="margin: auto;">
+                            <button class="btn dark_blue_btn" style="float: right;" 
+                                    ng-click="aceptarEditar()" ng-disabled="item_form.$invalid || !(currentPatron.tipo.id && currentPatron.recupera.id)" 
+                                    ng-show="currentPatron.accion==='editar'">
+                                Terminar edición
+                            </button>
+                            <button class="btn dark_blue_btn" style="float: right;" 
+                                    ng-click="aceptarAgregar()" ng-disabled="item_form.$invalid || !(currentPatron.tipo.id && currentPatron.recupera.id)" 
+                                    ng-show="currentPatron.accion==='agregar'"> 
+                                Agregar a la lista
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 no_left_margin">
+                        <div style="margin: auto;">
+                            <button class="btn dark_blue_btn" style="float: right;" ng-click="cancelarPatron()"> Cancelar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="row" ng-show="!currentPatron.accion" style="margin-top: 0.5em;">
+        <div class="col-xs-8">&nbsp;</div>
+        <div class="col-xs-2">
+            <div style="margin: auto;">
+                <button class="btn dark_blue_btn" style="float: right;" ng-click="aceptar()"> Aceptar</button>
+            </div>
+        </div>    
+        <div class="col-xs-2">            
+            <div style="margin: auto;">
+                <button class="btn dark_blue_btn" style="float: right;" ng-click="cancelar()"> Cancelar</button>
+            </div>            
+        </div>
+    </div>    
+</div>
+

@@ -1,0 +1,47 @@
+<!--<h2>paso_4_02</h2>-->
+<div class="col-xs-4 col_special">
+    <div class="row step_menu_holder radius-bottom">
+        <div class="content_main col-xs-12 step_container">
+            <div id="ievent_step">
+                <div class="line-menu shadow" ng-class="{'nCompleted': cateCompleted === true, 'nActive':  toComplete === true }">
+                    <p class="p_noMargin">CATÁLOGO AGENDA</p>
+                </div>
+            </div> 
+            <button type="button" class="btn btn_accept_step center-block" ng-click="aceptar()">Aceptar</button>
+        </div>
+    </div>
+</div>
+<div id="popUp_container" class="col-xs-8">
+    <div class="row col_special"> 
+        <div id="half_first" class="col-xs-6 no_left_margin" ng-show="toComplete === true">
+            <div class="step_menu_holder line-pop radius-bottom">
+                <div class="popUp">
+                    <div class="padd-div">
+                        <div class="col-xs-12">
+                            <div class="row" style="margin-bottom: 0.75em;">
+                                <p style="text-align: center;">¿ESTÁ ASOCIADO A ALGUNA AGENDA?</p>
+                                <div class="col-xs-8" style="margin-left: 25%;">
+                                    <div class="col-xs-6 no_padRight">
+                                        <input type="radio" class="radiobs" ng-value="true" name="isAge" ng-model="isAgenda"/>
+                                        <label>SI</label>
+                                    </div>
+                                    <div class="col-xs-6 no_padLeft">
+                                        <input type="radio" class="radiobs" ng-value="false" name="isAge" ng-model="isAgenda"/>
+                                        <label>NO</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" ng-show="isAgenda">
+                                <p>CATEGORÍAS</p>
+                                <div ia-categoria ng-model="dx.categoria" />
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn_accept_step center-block" ng-click="acceptCategoria()">
+                        Aceptar
+                    </button>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

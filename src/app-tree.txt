@@ -1,0 +1,373 @@
+root:.
+|   README.md
+|   app-tree.txt
+|   
+|           
++---src
+|   |   index.html
+|   |   
+|   +---apps
+|   |   |   app_admin.js
+|   |   |   
+|   |   +---app1
+|   |   |   \---admin
+|   |   |       +---controllers
+|   |   |       |   |   4_ClasificacionCtrl.js
+|   |   |       |   |   AppCtrl.js
+|   |   |       |   |   CasoCtrl.js
+|   |   |       |   |   ClasificadosCtrl.js
+|   |   |       |   |   EventoDelDiaCtrl.js
+|   |   |       |   |   ReconocimientoCtrl.js
+|   |   |       |   |   TemaCtrl.js
+|   |   |       |   |   
+|   |   |       |   \---4_clasificacion
+|   |   |       |           Paso_4_01Ctrl.js
+|   |   |       |           Paso_4_02Ctrl.js
+|   |   |       |           Paso_4_03Ctrl.js
+|   |   |       |           Paso_4_ReloadCtrl.js
+|   |   |       |           
+|   |   |       +---directives
+|   |   |       |   |   iaCaso.js
+|   |   |       |   |   iaCategoria.js
+|   |   |       |   |   iaCompletitudEtapa.js
+|   |   |       |   |   iaDropMenu.js
+|   |   |       |   |   iaEventoDelDia.js
+|   |   |       |   |   iaFecha.js
+|   |   |       |   |   iaHora.js
+|   |   |       |   |   iaReconocimiento.js
+|   |   |       |   |   iaTema.js
+|   |   |       |   |   iaUbicacionGeneral.js
+|   |   |       |   |   
+|   |   |       |   \---templates
+|   |   |       |           iaCaso.html
+|   |   |       |           iaCategoria.html
+|   |   |       |           iaCompletitudEtapa.html
+|   |   |       |           iaDropMenu.html
+|   |   |       |           iaEventoDelDia.html
+|   |   |       |           iaFecha.html
+|   |   |       |           iaHora.html
+|   |   |       |           iaReconocimiento.html
+|   |   |       |           iaTema.html
+|   |   |       |           iaUbicacionGeneral.html
+|   |   |       |           
+|   |   |       \---views
+|   |   |           |   4_clasificacion.html
+|   |   |           |   caso.html
+|   |   |           |   clasificados.html
+|   |   |           |   eventoDelDia.html
+|   |   |           |   footer.html
+|   |   |           |   header.html
+|   |   |           |   reconocimiento.html
+|   |   |           |   tema.html
+|   |   |           |   viewPlayer.html
+|   |   |           |   
+|   |   |           \---4_clasificacion
+|   |   |                   paso_4_01.html
+|   |   |                   paso_4_02.html
+|   |   |                   paso_4_03.html
+|   |   |                   paso_4_Reload.html
+|   |   |                   
+|   |   \---common
+|   |       +---authentication
+|   |       |   +---controllers
+|   |       |   |       ConfirmarCtrl.js
+|   |       |   |       LoginCtrl.js
+|   |       |   |       TimeoutCtrl.js
+|   |       |   |       
+|   |       |   +---services
+|   |       |   |       AuthenticationService.js
+|   |       |   |       
+|   |       |   \---views
+|   |       |           acceso.html
+|   |       |           confirmar.html
+|   |       |           timeout.html
+|   |       |           
+|   |       +---constant
+|   |       |       CONFIG.js
+|   |       |       ENTIDADES.js
+|   |       |       MAP_CONFIG.js
+|   |       |       PARAMETROS.js
+|   |       |       
+|   |       +---directives
+|   |       |       iaPaginacion.js
+|   |       |       iaScrollableH.js
+|   |       |       iaUtilDirectives.js
+|   |       |       
+|   |       +---filters
+|   |       |       AppFilters.js
+|   |       |       
+|   |       \---services
+|   |               AppModelService.js
+|   |               AppTransformService.js
+|   |               GenericService.js
+|   |               MediaService.js
+|   |               
+|   \---assets
+|       +---css
+|       |       bootstrap.css
+|       |       font-awesome.css
+|       |       jquery-impromptu.css
+|       |       jquery-ui.css
+|       |       jsonFrill.css
+|       |       ng-tags-input.css
+|       |       ngDialog.css
+|       |       pre-footer.css
+|       |       selectize.default.css
+|       |       skin_blue.css
+|       |       style.css
+|       |       style_admin.css
+|       |       style_confirm.css
+|       |       
+|       +---fonts
+|       |       bgothl-webfont.eot
+|       |       bgothl-webfont.svg
+|       |       bgothl-webfont.ttf
+|       |       bgothl-webfont.woff
+|       |       bgothm-webfont.eot
+|       |       bgothm-webfont.svg
+|       |       bgothm-webfont.ttf
+|       |       bgothm-webfont.woff
+|       |       fontawesome-webfont.eot
+|       |       fontawesome-webfont.svg
+|       |       fontawesome-webfont.ttf
+|       |       fontawesome-webfont.woff
+|       |       fontawesome-webfont.woff2
+|       |       FontAwesome.otf
+|       |       fontello.eot
+|       |       fontello.svg
+|       |       fontello.ttf
+|       |       fontello.woff
+|       |       glyphicons-halflings-regular.eot
+|       |       glyphicons-halflings-regular.svg
+|       |       glyphicons-halflings-regular.ttf
+|       |       glyphicons-halflings-regular.woff
+|       |       glyphicons-halflings-regular.woff2
+|       |       muli-italic-webfont.eot
+|       |       muli-italic-webfont.svg
+|       |       muli-italic-webfont.ttf
+|       |       muli-italic-webfont.woff
+|       |       muli-italic-webfont.woff2
+|       |       muli-light-webfont.eot
+|       |       muli-light-webfont.svg
+|       |       muli-light-webfont.ttf
+|       |       muli-light-webfont.woff
+|       |       muli-light-webfont.woff2
+|       |       muli-lightitalic-webfont.eot
+|       |       muli-lightitalic-webfont.svg
+|       |       muli-lightitalic-webfont.ttf
+|       |       muli-lightitalic-webfont.woff
+|       |       muli-lightitalic-webfont.woff2
+|       |       muli-regular-webfont.eot
+|       |       muli-regular-webfont.svg
+|       |       muli-regular-webfont.ttf
+|       |       muli-regular-webfont.woff
+|       |       muli-regular-webfont.woff2
+|       |       swissb-webfont.eot
+|       |       swissb-webfont.svg
+|       |       swissb-webfont.ttf
+|       |       swissb-webfont.woff
+|       |       swissb-webfont.woff2
+|       |       swiss_721_light_0-webfont.eot
+|       |       swiss_721_light_0-webfont.svg
+|       |       swiss_721_light_0-webfont.ttf
+|       |       swiss_721_light_0-webfont.woff
+|       |       swiss_721_light_0-webfont.woff2
+|       |       
+|       +---images
+|       |   |   dropdown_img.png
+|       |   |   favicon.png
+|       |   |   icono_nota.png
+|       |   |   img_user.png
+|       |   |   ui-icons_ef8c08_256x240.png
+|       |   |   
+|       |   +---background
+|       |   |       back_gen.jpg
+|       |   |       back_gen_blue.jpg
+|       |   |       
+|       |   +---buttons
+|       |   |       back.svg
+|       |   |       fwd.svg
+|       |   |       
+|       |   +---card
+|       |   |       police-1.png
+|       |   |       police-2.png
+|       |   |       
+|       |   +---icons
+|       |   |       advertencia.png
+|       |   |       dropdown.gif
+|       |   |       loading.gif
+|       |   |       
+|       |   +---logos
+|       |   |       angular_icon.png
+|       |   |       boton_offline.png
+|       |   |       boton_online.gif
+|       |   |       login_logo_redes.png
+|       |   |       logo-cns.png
+|       |   |       logo-division-de-inteligencia.png
+|       |   |       logo-polici-federal.png
+|       |   |       logo-sci.png
+|       |   |       logo-segob.png
+|       |   |       logo_clasificador.png
+|       |   |       logo_redes.png
+|       |   |       pf-logo1.jpg
+|       |   |       
+|       |   \---resource
+|       |           audio-activo-03.png
+|       |           documento-excel.jpg
+|       |           documento-log.jpg
+|       |           documento-pdf.jpg
+|       |           documento-power-point.jpg
+|       |           documento-txt.jpg
+|       |           documento-word.jpg
+|       |           documento-wri.jpg
+|       |           documento-xml.jpg
+|       |           icono-video-generico-03.png
+|       |           icono_def.png
+|       |           playerAudio.png
+|       |           
+|       +---js
+|       |   |   app_clock.js
+|       |   |   app_json_frill.js
+|       |   |   util.js
+|       |   |   
+|       |   \---plugins
+|       |       |   bootstrap.js
+|       |       |   moment.js
+|       |       |   ngdraggable.js
+|       |       |   socket.io.js
+|       |       |   
+|       |       +---angular-maps
+|       |       |       angular-google-maps-min.js
+|       |       |       infobox.js
+|       |       |       lodash.underscore.min.js
+|       |       |       
+|       |       +---angularjs
+|       |       |   |   angular-disable-all.js
+|       |       |   |   angular-filter.js
+|       |       |   |   angular-idle.js
+|       |       |   |   angular-moment.js
+|       |       |   |   angular-post-message.js
+|       |       |   |   angular-route-segment.min.js
+|       |       |   |   angular-sanitize.js
+|       |       |   |   angular-slick.js
+|       |       |   |   angular.hammer.js
+|       |       |   |   angularResource.js
+|       |       |   |   angularselect.js
+|       |       |   |   checklist-model.js
+|       |       |   |   ExtDraggableObject.js
+|       |       |   |   MarkerWithLabel.js
+|       |       |   |   moment.min.js
+|       |       |   |   ng-infinite-scroll.js
+|       |       |   |   ng-tags-input.js
+|       |       |   |   ngRepeatOwlCarousel.js
+|       |       |   |   ngStorage.js
+|       |       |   |   ui-bootstrap-tpls-0.14.1.min.js
+|       |       |   |   
+|       |       |   \---1.4.1
+|       |       |           angular-animate.js
+|       |       |           angular-cookies.js
+|       |       |           angular-route.js
+|       |       |           angular.js
+|       |       |           
+|       |       +---bootstrap
+|       |       |   \---3.3.4
+|       |       |           bootstrap.css
+|       |       |           bootstrap.css.map
+|       |       |           bootstrap.js
+|       |       |           bootstrap.min.js
+|       |       |           
+|       |       +---dialog
+|       |       |       ngDialog.js
+|       |       |       
+|       |       +---dropdown-menu-up.1.0.1
+|       |       |       dropdown-menu-up.css
+|       |       |       dropdown-menu-up.js
+|       |       |       
+|       |       +---geoxml3
+|       |       |       CustomOverlay.js
+|       |       |       geoxml3.js
+|       |       |       ProjectedOverlay.js
+|       |       |       
+|       |       +---hammer
+|       |       |       hammer_v2.js
+|       |       |       jquery.hammer.js
+|       |       |       jquery.touchSwipe.js
+|       |       |       
+|       |       +---jquery
+|       |       |   |   angles.js
+|       |       |   |   jquery-2.1.4.js
+|       |       |   |   jquery-impromptu.js
+|       |       |   |   jquery-ui.js
+|       |       |   |   jquery-ui.resizable.js
+|       |       |   |   jquery.hammer.js
+|       |       |   |   jquery.plainoverlay.js
+|       |       |   |   jquery.tmpl.js
+|       |       |   |   slick.js
+|       |       |   |   
+|       |       |   +---1.10.2
+|       |       |   |       jquery.js
+|       |       |   |       
+|       |       |   +---jquery-2.1.4.min
+|       |       |   |       jquery-2.1.4.min.js
+|       |       |   |       rotate.js
+|       |       |   |       
+|       |       |   \---tooltip
+|       |       |           tooltip-1.0.1.css
+|       |       |           tooltip-1.0.1.js
+|       |       |           
+|       |       +---jwplayer-7.0.0
+|       |       |   |   jwplayer.flash.swf
+|       |       |   |   jwplayer.js
+|       |       |   |   jwplayershaka.js
+|       |       |   |   jwplayer_original.js
+|       |       |   |   provider.shaka.js
+|       |       |   |   
+|       |       |   \---css skins
+|       |       |           beelden.css
+|       |       |           bekle.css
+|       |       |           five.css
+|       |       |           glow.css
+|       |       |           roundster.css
+|       |       |           seven.css
+|       |       |           six.css
+|       |       |           stormtrooper.css
+|       |       |           vapor.css
+|       |       |           
+|       |       \---socket.io
+|       |               socket.io.js
+|       |               
+|       +---json
+|       |   \---service
+|       |       |   get_list_casos.json
+|       |       |   get_list_clasificadas.json
+|       |       |   get_list_eventos.json
+|       |       |   get_nota_clasificada.json
+|       |       |   
+|       |       +---catalogo
+|       |       |       get-list-capturista.json
+|       |       |       get-list-colonia.json
+|       |       |       get-list-estado.json
+|       |       |       get-list-localidad-rural.json
+|       |       |       get-list-localidad-urbana.json
+|       |       |       get-list-municipio.json
+|       |       |       get-list-pais.json
+|       |       |       get-list-patrones.json
+|       |       |       get-list-tipo-tema.json
+|       |       |       
+|       |       +---local
+|       |       |       get-list-anio.json
+|       |       |       get-list-casoEvento.json
+|       |       |       get-list-eventoDia.json
+|       |       |       get-list-hora.json
+|       |       |       get-list-mes.json
+|       |       |       get-list-minuto.json
+|       |       |       get-list-patron-recupera.json
+|       |       |       get-list-patron-tipo.json
+|       |       |       get-list-prioridad.json
+|       |       |       get-list-subtipo-tema.json
+|       |       |       
+|       |       \---post
+|       |               post-agregar-nota.json
+|       |               
+|       \---repo
+|               control-cambios

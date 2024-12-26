@@ -1,0 +1,29 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": 1,
+            "nombre": "Evento Uno"
+        },
+        {
+            "id": 2,
+            "nombre": "Evento Dos"
+        },
+        {
+            "id": 3,
+            "nombre": "Evento Tres"
+        },
+        {
+            "id": 4,
+            "nombre": "Evento Cuatro"
+        },
+        {
+            "id": 5,
+            "nombre": "Evento Cinco"
+        }
+    ]
+}
+
+

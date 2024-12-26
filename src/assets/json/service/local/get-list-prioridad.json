@@ -1,0 +1,21 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id" : "Alta",
+            "nombre": "ALTA"
+        },
+        {
+            "id" : "Media",
+            "nombre": "MEDIA"
+        },
+        {
+            "id" : "Baja",
+            "nombre": "BAJA"
+        }
+    ]
+}
+
+

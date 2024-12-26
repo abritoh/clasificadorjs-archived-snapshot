@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es" ng-app='APP-CLASIFICADOR-ADMIN'>
+    <head>
+        <!-- arcbrth@gmail | 2016
+        ClasificadorJS is a modular, extensible AngularJS-based app designed to assist law enforcement agencies 
+        (now extinct Federal Police) in Mexico with operational, classification & investigation tasks.
+        -->
+        <title>Clasificador Admin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- style sheets  --> 
+        <link rel="shortcut icon" href="assets/images/favicon.png">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">        
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.css"> 
+        <link rel="stylesheet" href="assets/css/jquery-impromptu.css">
+        <link rel="stylesheet" href="assets/css/selectize.default.css">
+        <link rel="stylesheet" href="assets/css/ngDialog.css">
+        <link rel="stylesheet" href="assets/css/ng-tags-input.css"/>        
+        <link rel="stylesheet" href="assets/css/jsonFrill.css"/>
+        
+        <link rel="stylesheet" href="assets/css/style_confirm.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style_admin.css">
+        <link rel="stylesheet" href="assets/css/skin_blue.css">
+        
+        <!-- javascript library files --> 
+        <script type="text/javascript" src="assets/js/plugins/jquery/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/jquery/jquery-ui.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/bootstrap.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/jquery/jquery.tmpl.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/jquery/tooltip/tooltip-1.0.1.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/jquery/jquery-impromptu.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/jquery/jquery.plainoverlay.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/jwplayer-7.0.0/jwplayer.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/moment.js"></script>
+        <script>jwplayer.key = "WS4SzYp0Kld72MzbKwYfgzdstIvmfOZ82l7DHg==";</script>        
+        
+        <script type="text/javascript" src="assets/js/plugins/angularjs/1.4.1/angular.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/angularjs/1.4.1/angular-animate.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/angularjs/1.4.1/angular-cookies.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/angularjs/1.4.1/angular-route.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/angularjs/angular-route-segment.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/angularjs/angular-idle.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/angularjs/ngStorage.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/dialog/ngDialog.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/angularjs/angular-post-message.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/angularjs/checklist-model.js"></script>   
+        <script type="text/javascript" src="assets/js/plugins/angularjs/ng-tags-input.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/angularjs/angular-sanitize.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/angularjs/angularselect.js"></script>
+        
+    </head>
+    <body ng-controller="AppCtrl">
+        <!-- html content  -->        
+        <div ng-include="'apps/app1/admin/views/header.html'"></div>
+        <div id="main_container" class="container-fluid main_container" app-view-segment="0"></div>
+        <div ng-include src="'apps/app1/admin/views/viewPlayer.html'"></div>
+        <div ng-include="'apps/app1/admin/views/footer.html'"></div>
+
+        <!-- javascript application files -->         
+        <script type="text/javascript" src="assets/js/app_json_frill.js"></script>
+        <script type="text/javascript" src="assets/js/util.js"></script>
+        <script type="text/javascript" src="assets/js/app_clock.js"></script>
+        <script type="text/javascript" src="apps/app_admin.js" ></script>
+        
+        <script type="text/javascript" src="apps/common/constant/CONFIG.js"></script>
+        <script type="text/javascript" src="apps/common/constant/MAP_CONFIG.js"></script>
+        <script type="text/javascript" src="apps/common/constant/PARAMETROS.js"></script>
+        <script type="text/javascript" src="apps/common/constant/ENTIDADES.js"></script>
+        <script type="text/javascript" src="apps/common/directives/iaUtilDirectives.js"></script>
+        <script type="text/javascript" src="apps/common/directives/iaScrollableH.js"></script>
+        <script type="text/javascript" src="apps/common/directives/iaPaginacion.js"></script>
+        <script type="text/javascript" src="apps/common/services/GenericService.js" ></script>                
+        <script type="text/javascript" src="apps/common/authentication/services/AuthenticationService.js"></script>
+        <script type="text/javascript" src="apps/common/authentication/controllers/LoginCtrl.js"></script>
+        <script type="text/javascript" src="apps/common/authentication/controllers/ConfirmarCtrl.js"></script>
+        <script type="text/javascript" src="apps/common/authentication/controllers/TimeoutCtrl.js"></script>                
+        <script type="text/javascript" src="apps/common/services/AppModelService.js"></script>
+        <script type="text/javascript" src="apps/common/services/MediaService.js"></script>        
+        <script type="text/javascript" src="apps/common/services/AppTransformService.js"></script>
+        
+        <script type="text/javascript" src="apps/app1/admin/directives/iaDropMenu.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/directives/iaFecha.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/directives/iaHora.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/directives/iaUbicacionGeneral.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/directives/iaEventoDelDia.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/directives/iaCaso.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/directives/iaReconocimiento.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/directives/iaTema.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/directives/iaCategoria.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/directives/iaCompletitudEtapa.js"></script>
+        
+        <script type="text/javascript" src="apps/app1/admin/controllers/AppCtrl.js"></script>        
+        <script type="text/javascript" src="apps/app1/admin/controllers/ClasificadosCtrl.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/controllers/EventoDelDiaCtrl.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/controllers/CasoCtrl.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/controllers/ReconocimientoCtrl.js"></script>        
+        <script type="text/javascript" src="apps/app1/admin/controllers/TemaCtrl.js"></script>
+        
+        <script type="text/javascript" src="apps/app1/admin/controllers/4_ClasificacionCtrl.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/controllers/4_clasificacion/Paso_4_01Ctrl.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/controllers/4_clasificacion/Paso_4_02Ctrl.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/controllers/4_clasificacion/Paso_4_03Ctrl.js"></script>
+        <script type="text/javascript" src="apps/app1/admin/controllers/4_clasificacion/Paso_4_ReloadCtrl.js"></script>
+    </body>
+</html>
+
+

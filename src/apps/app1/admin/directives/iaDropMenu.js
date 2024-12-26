@@ -1,0 +1,1 @@
+angular.module("APP-CLASIFICADOR-ADMIN").directive("iaDropMenu",["PARAMETROS","$location","AppModelService",function(e,t,r){return{restrict:"AE",replace:!0,link:function(e,r,n,i){n.current&&(e.current=n.current,e.goto=function(e){t.path(e)})},scope:{},templateUrl:"apps/app1/admin/directives/templates/iaDropMenu.html"}}]);

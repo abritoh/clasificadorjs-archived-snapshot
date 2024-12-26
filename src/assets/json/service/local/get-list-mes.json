@@ -1,0 +1,57 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "mes": 1,
+            "nombreMes": "Enero"
+        },
+        {
+            "mes": 2,
+            "nombreMes": "Febrero"
+        },
+        {
+            "mes": 3,
+            "nombreMes": "Marzo"
+        },
+        {
+            "mes": 4,
+            "nombreMes": "Abril"
+        },
+        {
+            "mes": 5,
+            "nombreMes": "Mayo"
+        },
+        {
+            "mes": 6,
+            "nombreMes": "Junio"
+        },
+        {
+            "mes": 7,
+            "nombreMes": "Julio"
+        },
+        {
+            "mes": 8,
+            "nombreMes": "Agosto"
+        },
+        {
+            "mes": 9,
+            "nombreMes": "Septiembre"
+        },
+        {
+            "mes": 10,
+            "nombreMes": "Octubre"
+        },
+        {
+            "mes": 11,
+            "nombreMes": "Noviembre"
+        },
+        {
+            "mes": 12,
+            "nombreMes": "Diciembre"
+        }
+    ]
+}
+
+

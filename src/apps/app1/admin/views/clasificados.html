@@ -1,0 +1,130 @@
+<div class="row" id="notificador">
+    <div class="row col_special">
+        <!-- bandeja -->
+        <div class="col-xs-4 main_tray">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-xs-11 pre_head_tray"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 head_tray">
+                            <div class="container-fluid col_special">
+                                <div class="row">
+                                    <div class="col-xs-8 tray_sign">NOTAS CLASIFICADAS</div>
+                                    <div class="col-xs-4 news_qty ">{{Notificaciones.length}} de  {{totalRes}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 post_head_tray">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">        
+                <div class="col-xs-11 in_filter">
+                    <span class="title_filtrar">Filtrar notas por título:</span> 
+                    <input type="text" ng-model="query" ia-select-on-click
+                           class="input_filtrar" ng-minlength="4" title="Para filtrar escriba mínimo 4 caracteres">
+                </div>
+                <div class="col-xs-11 news_feed" ia-when-scrolled='loadData()'
+                     ng-class="{'loading-data':loadingData==true}">
+                    
+                    <div class="row col_special news_item" ng-repeat="item in Notificaciones| filter: {titulo: query}" 
+                         ng-click="verNotificacion($event, item)"
+                         ng-class="{'news_item_selected': item.selected === true}">
+                        <div class="col-xs-2 col_special news_icon">
+                            <p class="in_bloqueClasif">B{{item.bloqueClasif}}</p>
+                            <img src="assets/images/icono_nota.png"/>
+                        </div>
+                        <div class="col-xs-10 news_resume">
+                            <div class="news_title">{{item.titulo}}</div>
+                            <div class="news_weight">PESO:  {{item.archivotamano}}</div>
+                            <div class="news_format">ORIGINAL: {{item.archivotipo}}</div>
+                            <div class="news_date">FECHA DE CREACION: {{item.fechacreacion}}</div>
+                            <ul>
+                                <li class="news_audio fa-volume-up" ng-class="{'element_present': item.audios && item.audios.length > 0}"></li>
+                                <li class="news_image fa-camera" ng-class="{'element_present': item.imagenes && item.imagenes.length > 0}"></li>
+                                <li class="news_video fa-video-camera" ng-class="{'element_present': item.videos && item.videos.length > 0}"></li>
+                                <li class="news_notes fa-list-ul" ng-class="{'element_present': item.documentos && item.documentos.length > 0}"></li>
+                                <li class="news_rss fa-rss" ng-class="{'element_present': item.rss && item.rss.length > 0}"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row:bottom -->
+            <div class="row col_special">
+                <div class="col-xs-12 footer_tray">
+                    <div class="row name_absence">
+                        <div class="col-xs-4 employee">Nombre del empleado:</div>
+                        <div class="col-xs-4 name">{{$root.globals.infoUser.nombre}}</div>
+                    </div>
+                    <div class="row employee_logout">
+                        <div class="col-xs-4 employee_number">No. de empleado:</div>
+                        <div class="col-xs-4 number">{{$root.globals.infoUser.numEmpleado}}</div>
+                        <div class="col-xs-4">
+                            <button type="button" class="btn logout" ng-click="logout()" ng-disabled="!(avail === true)">CERRAR SESIÓN</button>
+                        </div>            
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!-- detalle -->
+        <div class="col-xs-8 main_display">
+            <div class="row header_main_display ">
+                <div class="col-xs-8 main_title">
+                    <div class="col-xs-2 n_label">T&Iacute;TULO</div>
+                    <div class="col-xs-10 n_label_dark" style="overflow: auto; padding: 0.35em 0.5em;">{{n_data.titulo}}</div>
+                </div>            
+                <div class="col-xs-4 col_special">
+                    <div class="col-xs-8 n_resource col_special">
+                        <ul ng-show="n_data.id_nota">
+                            <li class="news_audio fa-volume-up" ng-class="{'element_present': n_data.audios && n_data.audios.length > 0}"></li>
+                            <li class="news_image fa-camera" ng-class="{'element_present': n_data.imagenes && n_data.imagenes.length > 0}"></li>
+                            <li class="news_video fa-video-camera" ng-class="{'element_present': n_data.videos && n_data.videos.length > 0}"></li>
+                            <li class="news_notes fa-list-ul" ng-class="{'element_present': n_data.documentos && n_data.documentos.length > 0}"></li>
+                            <li class="news_rss fa-rss" ng-class="{'element_present': n_data.rss && n_data.rss.length > 0}"></li>                            
+                        </ul>                    
+                    </div>
+                    <div class="col-xs-4 col_special">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <div class="row mid_main_display">
+                <div class="col-xs-4 url no_left_margin">
+                    <div class="col-xs-4 n_label">URL</div>
+                    <div class="col-xs-8 n_field"><a class='link_classified' target="_blank" href='{{n_data.urlmedio}}'>{{n_data.urlmedio}}</a></div>
+                </div>
+                <div class="col-xs-4 news_source">
+                    <div class="col-xs-4 n_label">NOMBRE DEL MEDIO</div>
+                    <div class="col-xs-8 n_field">{{n_data.medio}}</div>
+                </div>
+                <div class="col-xs-4 publi_date no_right_margin">
+                    <div class="col-xs-4 n_label">FECHA DE PUBLICACI&Oacute;N</div>
+                    <div class="col-xs-8 n_field">{{n_data.fechapublicacion}}</div>
+                </div>            
+            </div>
+            <div class="row">
+                <!--content-->
+                <div class="col-xs-12 col_special treeMain" id="treeData" ng-class="{'loading_detalle': loading_detalle}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" ng-class="{'loading_detalle': loading_detalle}">
+                    <div class="col-xs-10 col_centered media_row" ng-show="n_resources.length>0">
+                        <div class="scrollable_h_recursos_bigger" ia-scrollable-h ia-scroll-step="120">
+                            <div class="styled_img" ng-repeat="x in n_resources" ng-click="showResource(x)">
+                                <img ng-src="{{x.url2}}" alt=''/>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ia-drop-menu current="clasificados" class="ia-drop-menu-fixed"></div>
+</div>

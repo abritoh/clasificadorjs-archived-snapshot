@@ -1,0 +1,26 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": "RafaelMontes",
+            "nombre": "RAFAEL MONTES"
+        },
+        {
+            "id": "PaulinoSalazar",
+            "nombre": "PAULINO SALAZAR"
+        }
+        ,
+        {
+            "id": "AndreaQuintana",
+            "nombre": "ANDREA QUINTANA"
+        },
+        {
+            "id": "MiriamAdame",
+            "nombre": "MIRIAM ADAME"
+        }
+    ]
+}
+
+

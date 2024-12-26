@@ -1,0 +1,27 @@
+<div ng-form name="this_form">
+    <div class="btn-group">
+        <button class="btn light_blue_btn dropdown-toggle" data-toggle="dropdown" style="float: right;"> 
+            Ir a ... <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu blue-dropd">
+            <li class="li-dropdown" ng-hide="current==='clasificados'">
+                <a ng-href="#/clasificados">Ir a Clasificados</a>
+            </li>            
+            <li class="li-dropdown" ng-hide="current==='clasificacion'">
+                <a ng-href="#/clasificacion">Ir a Bloque 4</a>
+            </li>
+            <li class="li-dropdown" ng-hide="current==='eventoDelDia'" >
+                <a ng-href="#/eventoDelDia">Ir a Eventos</a>
+            </li>
+            <li class="li-dropdown" ng-hide="current==='tema'" ng-class="{'not_bottomBorder': current ==='caso'}">
+                <a ng-href="#/tema">Ir a Temas</a>
+            </li>
+            <li class="li-dropdown" ng-hide="current==='caso'" >
+                <a ng-href="#/caso">Ir a Casos</a>
+            </li>            
+            <li class="li-dropdown" ng-hide="current==='reconocimiento'" >
+                <a ng-href="#/reconocimiento">Ir a Patrones Reconocimiento</a>
+            </li>                        
+        </ul>
+    </div>
+</div>

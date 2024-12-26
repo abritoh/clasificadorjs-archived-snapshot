@@ -1,0 +1,41 @@
+<div class="col-xs-4 col_special">
+    <div class="row step_menu_holder radius-bottom">
+        <div class="content_main col-xs-12 step_container">            
+            <div id="ievent_step">
+                <div class="line-menu shadow line-menu-title">
+                    <p class="p_noMargin">
+                        {{app_model.NOTA.titulo}}
+                    </p>
+                </div>
+                <div class="line-menu shadow" ng-class="{'nCompleted': casoCompleted === true, 'nActive':  toComplete === true }">
+                    <p class="p_noMargin">CASO</p>
+                </div>
+            </div> 
+            <button type="button" class="btn btn_accept_step center-block" ng-click="aceptar()">Aceptar</button>
+        </div>
+    </div>
+</div>
+<div id="popUp_container" class="col-xs-8">
+    <div class="row col_special"> 
+        <div id="half_first" class="col-xs-6 no_left_margin" ng-show="toComplete === true">
+            <div class="step_menu_holder line-pop radius-bottom">
+                <div class="popUp">
+                    <div class="padd-div">
+                        <div class="col-xs-12" style="padding-bottom: 1em;">
+                            <ui-select ng-model="dx.casoEvento" name="">
+                                <ui-select-match placeholder="SELECCIONE CASO">{{$select.selected.nombre}}</ui-select-match>
+                                <ui-select-choices repeat="x in get_list_casoEvento | filter: $select.search">
+                                    <span ng-bind-html="x.nombre"></span>
+                                </ui-select-choices>
+                            </ui-select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn_accept_step center-block" ng-click="acceptCasoEvento($event)"
+                            ia-async-button ia-async-key="4_2_aceptar" ia-async-label="Procesando...">
+                        Aceptar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

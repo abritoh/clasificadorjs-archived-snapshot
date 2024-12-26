@@ -1,0 +1,23 @@
+<div ng-form name="this_form">
+    <div class="row col_special">
+        <div class="col-xs-4 no_left_margin">                                
+            <ui-select ng-model="dx.hora">
+                <ui-select-match placeholder="{{opt_str}}HORA">{{$select.selected.hora}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_hora">
+                    <span>{{x.hora}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div class="col-xs-4 col_special">                                
+            <ui-select ng-model="dx.minuto">
+                <ui-select-match placeholder="{{opt_str}}MINUTO">{{$select.selected.minuto}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_minuto">
+                    <span>{{x.minuto}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+    </div>
+</div>
+
+
+

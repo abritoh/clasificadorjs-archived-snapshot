@@ -1,0 +1,32 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": 1,
+            "nombre": "IMPUESTO AL ACTIVO - IMPAC"
+        },
+        {
+            "id": 2,
+            "nombre": "IMPUESTO SOBRE LA RENTA - ISR"
+        },
+        {
+            "id": 3,
+            "nombre": "IMPUESTO AL VALOR AGREGADO - IVA"
+        },
+        {
+            "id": 4,
+            "nombre": "SALARIOS"
+        },{
+            "id": 5,
+            "nombre": "GENERACIÓN DE EMPLEOS"
+        },{
+            "id": 6,
+            "nombre": "PRESTACIONES"
+        },{
+            "id": 7,
+            "nombre": "DESEMPLEO"
+        }
+    ]
+}

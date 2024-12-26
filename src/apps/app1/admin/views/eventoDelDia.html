@@ -1,0 +1,155 @@
+<div class="row" id="notificador" style="margin-top: -1em;">
+    <div class="row col_special">
+        <!-- bandeja -->
+        <div class="col-xs-4 main_tray">
+            <div class="tabs_seccion">
+                <ul class="nav nav-tabs" style="border-bottom: 0;">
+                    <li role="presentation" ng-class="{'active': tab_active === 0}" ng-click="tab_active = 0">ACTIVOS</li>
+                    <li role="presentation" ng-class="{'active': tab_active === 1}" ng-click="tab_active = 1">INACTIVOS</li>
+                </ul>
+            </div>
+            <div ng-show="tab_active === 0">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-xs-11 pre_head_tray"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 head_tray">
+                                <div class="container-fluid col_special">
+                                    <div class="row">
+                                        <div class="col-xs-8 tray_sign">LISTADO DE EVENTOS</div>
+                                        <div class="col-xs-4 news_qty ">{{Eventos.length}} de  {{totalRes}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 post_head_tray">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">        
+                    <div class="col-xs-11 in_filter">
+                        <span class="title_filtrar">Filtrar evento por nombre:</span> 
+                        <input type="text" ng-model="query" ia-select-on-click
+                               class="input_filtrar" style="width: 55%" ng-minlength="4" title="Para filtrar escriba mínimo 4 caracteres">
+                    </div>
+                    <div class="col-xs-11 news_feed" ia-when-scrolled='loadData()'
+                         ng-class="{'loading-data':loadingData == true}">
+
+                        <div class="row col_special news_item" ng-click="verEventoItem($event, item, $index)"
+                             ng-class="{'news_item_selected': item.selected === true}" ng-repeat="item in Eventos| filter: {nombreEvento: query || undefined}"> 
+                            <div class="col-xs-12" ng-class="{'inactive_item': item.activo === 'false'}">
+                                <div class="row">
+                                    <div class="col-xs-11" style="padding: 0.5em 1em;">
+                                        <p class="p_titulo">{{item.nombreEvento}}</p>
+                                        <p class="no_pMargin">{{item.municipio + ' ' + item.estado + ' ' + item.pais}}</p>
+                                        <p class="no_pMargin">{{ item.fecha + ' , ' + item.hora}}</p>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <div class="in_prori {{item.prioridad}}_prioridad" title="Prioridad: {{item.prioridad}}"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="tab_active === 1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-xs-11 pre_head_tray"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 head_tray">
+                                <div class="container-fluid col_special">
+                                    <div class="row">
+                                        <div class="col-xs-8 tray_sign">LISTADO DE EVENTOS</div>
+                                        <div class="col-xs-4 news_qty ">{{EventosInactivos.length}} de  {{totalResInactivos}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 post_head_tray">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">        
+                    <div class="col-xs-11 in_filter">
+                        <span class="title_filtrar">Filtrar evento por nombre:</span> 
+                        <input type="text" ng-model="queryInactivos" ia-select-on-click
+                               class="input_filtrar" style="width: 55%" ng-minlength="4" title="Para filtrar escriba mínimo 4 caracteres">
+                    </div>
+                    <div class="col-xs-11 news_feed" ia-when-scrolled='loadData()'
+                         ng-class="{'loading-data':loadingDataInactivos == true}">
+
+                        <div class="row col_special news_item" ng-click="verEventoItemInactive($event, item, $index)"
+                             ng-class="{'news_item_selected': item.selected === true}" ng-repeat="item in EventosInactivos| filter: {nombreEvento: queryInactivos || undefined}"> 
+                            <div class="col-xs-12" ng-class="{'inactive_item': item.activo === 'false'}">
+                                <div class="row">
+                                    <div class="col-xs-11" style="padding: 0.5em 1em;">
+                                        <p class="p_titulo">{{item.nombreEvento}}</p>
+                                        <p class="no_pMargin">{{item.municipio + ' ' + item.estado + ' ' + item.pais}}</p>
+                                        <p class="no_pMargin">{{ item.fecha + ' , ' + item.hora}}</p>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <div class="in_prori {{item.prioridad}}_prioridad" title="Prioridad: {{item.prioridad}}"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row:bottom -->
+            <div class="row col_special">
+                <div class="col-xs-12 footer_tray">
+                    <div class="row name_absence">
+                        <div class="col-xs-4 employee">Nombre del empleado:</div>
+                        <div class="col-xs-4 name">{{$root.globals.infoUser.nombre}}</div>
+                    </div>
+                    <div class="row employee_logout">
+                        <div class="col-xs-4 employee_number">No. de empleado:</div>
+                        <div class="col-xs-4 number">{{$root.globals.infoUser.numEmpleado}}</div>
+                        <div class="col-xs-4">
+                            <button type="button" class="btn logout" ng-click="logout()">CERRAR SESIÓN</button>
+                        </div>            
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!-- detalle -->
+        <div class="col-xs-8 main_display">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12" >
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <button class="btn dark_blue_btn" ng-click="agregarNEvento()"> Agregar Nuevo</button>
+                            </div>
+                            <div class="col-xs-3"></div>
+                            <div class="col-xs-4"></div>
+                            <div class="col-xs-2">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div ng-show="verNuevoEvento" style="margin: auto; width: 70%;" id="eventoDelDia_agregar">                             
+                        </div>
+                        <div ng-show="verEvento" style="margin: auto; width: 70%;" id="eventoDelDia_editar">                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ia-drop-menu current="eventoDelDia" class="ia-drop-menu-fixed"></div>
+</div>

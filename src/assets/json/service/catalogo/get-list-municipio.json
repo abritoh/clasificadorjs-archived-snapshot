@@ -1,0 +1,142 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": "MX17001",
+            "nombre": "Amacuzac"
+        },
+        {
+            "id": "MX17002",
+            "nombre": "Atlatlahucan"
+        },
+        {
+            "id": "MX17003",
+            "nombre": "Axochiapan"
+        },
+        {
+            "id": "MX17004",
+            "nombre": "Ayala"
+        },
+        {
+            "id": "MX17005",
+            "nombre": "Coatlán del Río"
+        },
+        {
+            "id": "MX17006",
+            "nombre": "Cuautla"
+        },
+        {
+            "id": "MX17007",
+            "nombre": "Cuernavaca"
+        },
+        {
+            "id": "MX17008",
+            "nombre": "Emiliano Zapata"
+        },
+        {
+            "id": "MX17009",
+            "nombre": "Huitzilac"
+        },
+        {
+            "id": "MX17010",
+            "nombre": "Jantetelco"
+        },
+        {
+            "id": "MX17011",
+            "nombre": "Jiutepec"
+        },
+        {
+            "id": "MX17012",
+            "nombre": "Jojutla"
+        },
+        {
+            "id": "MX17013",
+            "nombre": "Jonacatepec"
+        },
+        {
+            "id": "MX17014",
+            "nombre": "Mazatepec"
+        },
+        {
+            "id": "MX17015",
+            "nombre": "Miacatlán"
+        },
+        {
+            "id": "MX17016",
+            "nombre": "Ocuituco"
+        },
+        {
+            "id": "MX17017",
+            "nombre": "Puente de Ixtla"
+        },
+        {
+            "id": "MX17018",
+            "nombre": "Temixco"
+        },
+        {
+            "id": "MX17019",
+            "nombre": "Tepalcingo"
+        },
+        {
+            "id": "MX17020",
+            "nombre": "Tepoztlán"
+        },
+        {
+            "id": "MX17021",
+            "nombre": "Tetecala"
+        },
+        {
+            "id": "MX17022",
+            "nombre": "Tetela del Volcán"
+        },
+        {
+            "id": "MX17023",
+            "nombre": "Tlalnepantla"
+        },
+        {
+            "id": "MX17024",
+            "nombre": "Tlaltizapán"
+        },
+        {
+            "id": "MX17025",
+            "nombre": "Tlaquiltenango"
+        },
+        {
+            "id": "MX17026",
+            "nombre": "Tlayacapan"
+        },
+        {
+            "id": "MX17027",
+            "nombre": "Totolapan"
+        },
+        {
+            "id": "MX17028",
+            "nombre": "Xochitepec"
+        },
+        {
+            "id": "MX17029",
+            "nombre": "Yautepec"
+        },
+        {
+            "id": "MX17030",
+            "nombre": "Yecapixtla"
+        },
+        {
+            "id": "MX17031",
+            "nombre": "Zacatepec de Hidalgo"
+        },
+        {
+            "id": "MX17032",
+            "nombre": "Zacualpan de Amilpas"
+        },
+        {
+            "id": "MX17033",
+            "nombre": "Temoac"
+        }
+    ]
+}
+
+
+

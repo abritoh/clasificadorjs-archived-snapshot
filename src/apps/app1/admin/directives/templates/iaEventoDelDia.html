@@ -1,0 +1,74 @@
+<div ng-form name="this_form" class="col-xs-12 back_gray" style="padding: 1em 2em;">
+    <p class="titulo_obt" style="color: #FFFFFF" ng-show="mode === 'agregar'">Agregar Evento</p>
+    <p class="titulo_obt" style="color: #FFFFFF" ng-show="mode === 'editar'">Editar Evento</p>
+    <div class="row">
+        <div class="one_r">
+            <input class="input_white" ng-model="dx.nombre" style="font-size: 18px;" placeholder = "*NOMBRE DEL EVENTO" ng-disabled="mode === 'editar'"
+                   ng-class="{'ui-select-disabled-event-i': mode === 'editar'}" required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="one_r">
+            <div ia-ubicacion-general ng-model="dx.ubicacion"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="one_r">
+            <div ia-fecha ng-model="dx.fecha" year-step="-1" year-count="6"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="one_r">
+            <div ia-hora ng-model="dx.hora" optional="false"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="one_r">
+            <ui-select ng-model="dx.prioridad" name="" required>
+                <ui-select-match placeholder="*SELECCIONE PRIORIDAD">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_prioridad | filter: $select.search">
+                    <span ng-bind-html="x.nombre"></span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+    </div>
+    <!--<div class="row">
+        <div class="one_r">
+            <ui-select ng-model="dx.asignacion" name="" required>
+                <ui-select-match placeholder="SELECCIONE CAPTURISTAS">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_capturista | filter: $select.search">
+                    <span ng-bind-html="x.nombre"></span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+    </div>-->
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="" style="float: right;">
+                <input type="radio" class="radiobs" name="evento_Act" ng-value="true" ng-model="dx.activo" ng-required="!dx.activo"/>
+                <label>ACTIVO</label>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="" style="float: left;">
+                <input type="radio" class="radiobs" name="evento_Act" ng-value="false" ng-model="dx.activo" ng-required="!dx.activo"/>
+                <label>INACTIVO</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-8">&nbsp;</div>
+        <div class="col-xs-2">
+            <div style="margin: auto;">
+                <button class="btn dark_blue_btn" style="float: right;" ng-click="aceptar()"> Aceptar</button>
+            </div>
+        </div>    
+        <div class="col-xs-2">            
+            <div style="margin: auto;">
+                <button class="btn dark_blue_btn" style="float: right;" ng-click="cancelar()"> Cancelar</button>
+            </div>            
+        </div>
+    </div>    
+</div>
+

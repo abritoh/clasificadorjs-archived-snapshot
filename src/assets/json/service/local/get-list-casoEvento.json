@@ -1,0 +1,27 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": 1,
+            "nombre": "Caso Uno"
+        },
+        {
+            "id": 2,
+            "nombre": "Caso Dos"
+        },
+        {
+            "id": 3,
+            "nombre": "Caso Tres"
+        },
+        {
+            "id": 4,
+            "nombre": "Caso Cuatro"
+        },
+        {
+            "id": 5,
+            "nombre": "Caso Cinco"
+        }
+    ]
+}

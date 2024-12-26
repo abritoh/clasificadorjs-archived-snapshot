@@ -1,0 +1,57 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "activo": false,
+            "urlSemilla": "http://indesol.gob.mx",
+            "urlSeguimiento": [
+                "http://indesol.gob.mx/comunicados-abril-2016/",
+                "http://indesol.gob.mx/events/"
+            ],
+            "patrones": [
+                {
+                    "id": "titulo",
+                    "patron": "h1.page-title > a",
+                    "recupera": "text",
+                    "atributo": "src"
+                },
+                {
+                    "id": "fecha",
+                    "patron": "div,entry-meta",
+                    "recupera": "text",
+                    "atributo": "href"
+                },
+                {
+                    "id": "imagen",
+                    "patron": "",
+                    "recupera": "url",
+                    "atributo": "src"
+                },
+                {
+                    "id": "contenido",
+                    "patron": "div.entry-content p span[lang=ES-MX]",
+                    "recupera": "text",
+                    "atributo": "alt"
+                }
+            ],            
+            "keyWords": [
+                "comunicado",
+                "evento",
+                "podcast",
+                "boletin",
+                "prensa",
+                "conferencia",
+                "desplegado",
+                "artículo",
+                "descargables",
+                "noticia"
+            ], 
+            "totalRes": 1
+        }
+    ]
+}
+
+
+

@@ -1,0 +1,36 @@
+<div ng-form name="this_form">
+    <div class="col-xs-12 col_special" style="margin-bottom: 1em;">
+        <div ng-class="{'ui-select-disabled-event':dx.disable && dx.deep>=1}">
+            <ui-select ng-model="dx.tipoTema">
+                <ui-select-match placeholder="*SELECCIONE TIPO DE TEMA">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_tipo_tema">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div ng-show="get_list_subtipo_tema.length > 0 && dx.tipoTema" ng-class="{'ui-select-disabled-event':dx.disable && dx.deep>=2}">
+            <ui-select ng-model="dx.subTipoTema">
+                <ui-select-match placeholder="*SELECCIONE SUBTIPO DE TEMA">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_subtipo_tema">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div ng-show="get_list_subsubtipo_tema.length > 0 && dx.subTipoTema" ng-class="{'ui-select-disabled-event':dx.disable && dx.deep>=3}">
+            <ui-select ng-model="dx.subSubTipoTema">
+                <ui-select-match placeholder="*SELECCIONE SUBSUBTIPO DE TEMA">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_subsubtipo_tema | filter: $select.search">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>        
+        <div ng-show="get_list_subsubsubtipo_tema.length > 0 && dx.subSubTipoTema" ng-class="{'ui-select-disabled-event':dx.disable && dx.deep>=4}">
+            <ui-select ng-model="dx.subSubSubTipoTema">
+                <ui-select-match placeholder="*SELECCIONE SUBSUBSUBTIPO DE TEMA">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_subsubsubtipo_tema | filter: $select.search">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>           
+    </div>
+</div>

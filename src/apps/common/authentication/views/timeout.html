@@ -1,0 +1,52 @@
+
+<div class="img-fondo-login">    
+    <div class="lightbox" ng-class="error_display">
+        <div class=" advertencia">
+            <ul>
+                <li class="icono"><img src="assets/images/icons/advertencia.png"></li>
+                <li><p>USUARIO O CONTRASE&Ntilde;A<br/>INCORRECTOS</p></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+        <div class="aceptar" ng-click="hideAlert()" id="lightbox_aceptar">ACEPTAR</div>
+    </div>
+    <div class="img-comando-cont" >
+        <div class="img-fondo-comando" ></div>
+    </div>
+    <div class="container">
+        <div class="col-md-offset-3 col-md-6">
+            <form name="formLogin_timeout">
+                <div class="form-login">
+                    <p>
+                        Sal&oacute;n de Operaciones del Mando &Uacute;nico
+                    </p>
+                    <p class="titulo-comando">COMANDO</p>
+
+                    <div class="fondo-login-input fondo-transparencia1">
+                        <p class="login_msg_timeout">
+                            Para continuar con su sesi&oacute;n debe escribir sus credenciales
+                        </p>
+                        <input type="text"  required minlength="4" maxlength="10" id="userName_timeout" 
+                               ng-model="usuario" class=" login-input" placeholder="USUARIO">
+                        <br>
+                        <input type="password"  required minlength="4" maxlength="10" id="userPassword_timeout" 
+                               ng-model="password" class="login-input" placeholder="CONTRASEÑA">
+                        <br>
+                    </div>
+                    <button ng-click="login();" ng-disabled="disabled"  
+                            class="login-btn fondo-transparencia1 col-md-offset-2">
+                        {{btn_name}}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="descrip_user_pass_timeout" class="perso-tooltip">CONTRASE&Ntilde;A</div>
+    <div id="descrip_user_name_timeout" class="perso-tooltip">USUARIO</div>
+
+    <script>
+        $("#userName_timeout").msj_tooltip_follow_me("#descrip_user_name_timeout");
+        $("#userPassword_timeout").msj_tooltip_follow_me("#descrip_user_pass_timeout");
+    </script>
+</div>
+

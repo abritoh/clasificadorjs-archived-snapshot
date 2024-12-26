@@ -1,0 +1,111 @@
+<div class="row" id="notificador">
+    <div class="row col_special">
+        <!-- bandeja -->
+        <div class="col-xs-4 main_tray">
+            <div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-xs-11 pre_head_tray"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 head_tray">
+                                <div class="container-fluid col_special">
+                                    <div class="row">
+                                        <div class="col-xs-8 tray_sign">PATRONES DE RECONOCIMIENTO</div>
+                                        <div class="col-xs-4 news_qty ">{{ArrayData.length}} de  {{totalRes}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 post_head_tray">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">        
+                    <div class="col-xs-11 in_filter">
+                        <span class="title_filtrar">Filtrar por nombre:</span> 
+                        <input type="text" ng-model="query" ia-select-on-click
+                               class="input_filtrar" style="width: 55%" ng-minlength="4" title="Para filtrar escriba mínimo 4 caracteres">
+                    </div>
+                    <div class="col-xs-11 news_feed"                         
+                         ia-paginacion pg-load-data="loadData" pg-data="ArrayData" 
+                         pg-reload="reloadData" pg-loading="loading-data" pg-load-start="true">
+
+                        <div class="row col_special news_item" ng-click="viewItem($event, item, $index)"
+                             ng-class="{'news_item_selected': item.selected === true}" 
+                             ng-repeat="item in ArrayData| filter: {urlSemilla: query || undefined}"> 
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="col-xs-12" style="padding: 0.5em 1em;">
+                                        <p class="no_pMargin" style="font-size: 1.15em;">
+                                            <b>{{item.urlSemilla}}</b>
+                                        </p>
+                                    
+                                        <div class="row">
+                                            <div class="col-xs-3 no_right_margin">
+                                                <p>
+                                                    <b>Palabras clave:</b>
+                                                </p>
+                                            </div>
+                                            <div class="col-xs-9 col_special">
+                                                <p>
+                                                    {{setPalabrasClave(item.keyWords)}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- row:bottom -->
+            <div class="row col_special">
+                <div class="col-xs-12 footer_tray">
+                    <div class="row name_absence">
+                        <div class="col-xs-4 employee">Nombre del empleado:</div>
+                        <div class="col-xs-4 name">{{$root.globals.infoUser.nombre}}</div>
+                    </div>
+                    <div class="row employee_logout">
+                        <div class="col-xs-4 employee_number">No. de empleado:</div>
+                        <div class="col-xs-4 number">{{$root.globals.infoUser.numEmpleado}}</div>
+                        <div class="col-xs-4">
+                            <button type="button" class="btn logout" ng-click="logout()">CERRAR SESIÓN</button>
+                        </div>            
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!-- detalle -->
+        <div class="col-xs-8 main_display" style="padding-left: 0;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12" >
+                        <div class="row">
+                            <div class="col-xs-2">                                
+                                <div class="col-xs-3">
+                                    <button class="btn dark_blue_btn" ng-click="addNew()"> Agregar Nuevo</button>
+                                </div>
+                            </div>
+                            <div class="col-xs-10">
+                                <div class="row">
+                                    <div class="col-xs-12 col_special">
+                                        <div ng-show="currentItem" style="width: 90%;" id="component_container">
+                                            <!-- dynamic content will be placed here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div ia-drop-menu current="reconocimiento" class="ia-drop-menu-fixed"></div>
+    </div>

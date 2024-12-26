@@ -1,0 +1,169 @@
+<div class="row" id="notificador">
+    <div class="row col_special">
+        <!-- bandeja -->
+        <div class="col-xs-3"> 
+            <div class="row h_space"></div>
+            <!-- row:bottom -->
+            <div class="row col_special">
+                <div class="col-xs-12 footer_tray" style="border-top: 1px solid #ffffff; padding-top: 0.5em;">
+                    <div class="row name_absence">
+                        <div class="col-xs-4 employee">Nombre del empleado:</div>
+                        <div class="col-xs-4 name">{{$root.globals.infoUser.nombre}}</div>
+                    </div>
+                    <div class="row employee_logout">
+                        <div class="col-xs-4 employee_number">No. de empleado:</div>
+                        <div class="col-xs-4 number">{{$root.globals.infoUser.numEmpleado}}</div>
+                        <div class="col-xs-4">
+                            <button type="button" class="btn logout" ng-click="logout()">CERRAR SESIÓN</button>
+                        </div>            
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!-- detalle -->
+        <div class="col-xs-9">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12" >
+                        <div class="row">
+                            <div class="col-xs-3">
+                            </div>
+                            <div class="col-xs-3"></div>
+                            <div class="col-xs-4"></div>
+                            <div class="col-xs-2">
+                                &nbsp;                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-xs-8 back_gray tema_main">
+                            <div class="row" ng-class="{'no_data': showTema}">
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <p style="text-align: center; color: white; font-size: 26px">
+                                            ¿QUÉ DESEA AGREGAR?
+                                        </p>
+                                    </div>
+                                    <div class="row in_row">
+                                        <div class="col-xs-10 col_centered" style="color: white;">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <div class="" >
+                                                        <input type="radio" name="tema" class="radiobs" value="tema" ng-model="dx.tema_r"/>
+                                                        <label>TEMA</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="" style="padding-left: 3.0em;">
+                                                        <input type="radio" name="tema" class="radiobs" value="subtema" ng-model="dx.tema_r"/>
+                                                        <label>SUBTEMA</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="" >
+                                                        <input type="radio" name="tema" class="radiobs" value="subsubtema" ng-model="dx.tema_r"/>
+                                                        <label>SUB SUBTEMA</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row in_row">
+                                        <div class="col-xs-2 col_centered">
+                                            <button class="btn light_blue_btn btn_sm" ng-show="dx.tema_r" ng-click="showTema = true" style="width: 100%;">ACEPTAR</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr_tema">
+                            <div class="row" ng-show="showTema">
+                                <div class="col-xs-12">
+                                    <div class="row" ng-class="{'no_data': temaBloqueo}">
+                                        <div class="col-xs-12 in_row" style="">
+                                            <p class="tema_title">TEMA</p>
+                                            <div class="row">
+                                                <div class="col-xs-1"></div>
+                                                <div class="col-xs-8">
+                                                    <div class="row" ng-show="dx.tema_r !== 'tema'">
+                                                        <ui-select ng-model="dx.nombreTema" name="">
+                                                            <ui-select-match placeholder="*SELECCIONE TEMA">{{$select.selected.nombre}}</ui-select-match>
+                                                            <ui-select-choices repeat="x in get_list_tipo_tema | filter: $select.search">
+                                                                <span ng-bind-html="x.nombre"></span>
+                                                            </ui-select-choices>
+                                                        </ui-select>
+                                                    </div>
+                                                    <div class="row" ng-show="dx.tema_r === 'tema'">
+                                                        <input class="input_white" ng-model="dx.i_nombreTema" style="font-size: 18px;" placeholder = "*NOMBRE DEL TEMA" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <button class="btn light_blue_btn btn_sm" ng-click="guardarTema()">GUARDAR</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" ng-class="{'no_data': subtemaBloqueo}">
+                                        <div class="col-xs-12 in_row">
+                                            <p class="tema_title">SUBTEMA</p>
+                                            <div class="row">
+                                                <div class="col-xs-1"></div>
+                                                <div class="col-xs-8">
+                                                    <div class="row" ng-show="dx.tema_r === 'subsubtema'">
+                                                        <ui-select ng-model="dx.nombreSubTema" name="">
+                                                            <ui-select-match placeholder="*SELECCIONE SUBTEMA">{{$select.selected.nombre}}</ui-select-match>
+                                                            <ui-select-choices repeat="x in get_list_subtipo_tema | filter: $select.search">
+                                                                <span ng-bind-html="x.nombre"></span>
+                                                            </ui-select-choices>
+                                                        </ui-select>
+                                                    </div>
+                                                    <div class="row" ng-show="(dx.tema_r === 'tema')||(dx.tema_r === 'subtema')">
+                                                        <input class="input_white" ng-model="dx.i_nombreSubTema" style="font-size: 18px;" placeholder = "*NOMBRE DEL SUBTEMA" />
+                                                    </div>     
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <button class="btn light_blue_btn btn_sm" ng-click="guardarSubTema()">GUARDAR</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" ng-class="{'no_data': subsubtemaBloqueo}">
+                                        <div class="col-xs-12 in_row">
+                                            <p class="tema_title">SUB SUBTEMA</p>
+                                            <div class="row">
+                                                <div class="col-xs-1"></div>
+                                                <div class="col-xs-8">
+                                                    <div class="row" ng-show="false">
+                                                        <ui-select ng-model="dx.nombreSubSubTema" name="">
+                                                            <ui-select-match placeholder="*SELECCIONE SUB SUBTEMA">{{$select.selected.nombre}}</ui-select-match>
+                                                            <ui-select-choices repeat="x in get_list_subsubtipo_tema | filter: $select.search">
+                                                                <span ng-bind-html="x.nombre"></span>
+                                                            </ui-select-choices>
+                                                        </ui-select>
+                                                    </div>
+                                                    <div class="row" ng-show="true">
+                                                        <input class="input_white" ng-model="dx.i_nombreSubSubTema" style="font-size: 18px;" placeholder = "*NOMBRE DEL SUB SUBTEMA" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <button class="btn light_blue_btn btn_sm" ng-click="guardarSubSubTema()">GUARDAR</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="col-xs-2 col_centered" style="text-align: center;">
+                                        <button class="btn light_blue_btn" ng-show="showNuevoTemaB" ng-click="limpiarTemas()">Nuevo</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ia-drop-menu current="tema" class="ia-drop-menu-fixed"></div>
+</div>

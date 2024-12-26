@@ -1,0 +1,137 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": "MX01",
+            "nombre": "Aguascalientes"
+        },
+        {
+            "id": "MX02",
+            "nombre": "Baja California"
+        },
+        {
+            "id": "MX03",
+            "nombre": "Baja California Sur"
+        },
+        {
+            "id": "MX04",
+            "nombre": "Campeche"
+        },
+        {
+            "id": "MX05",
+            "nombre": "Coahuila de Zaragoza"
+        },
+        {
+            "id": "MX06",
+            "nombre": "Colima"
+        },
+        {
+            "id": "MX07",
+            "nombre": "Chiapas"
+        },
+        {
+            "id": "MX08",
+            "nombre": "Chihuahua"
+        },
+        {
+            "id": "MX09",
+            "nombre": "Distrito Federal"
+        },
+        {
+            "id": "MX10",
+            "nombre": "Durango"
+        },
+        {
+            "id": "MX11",
+            "nombre": "Guanajuato"
+        },
+        {
+            "id": "MX12",
+            "nombre": "Guerrero"
+        },
+        {
+            "id": "MX13",
+            "nombre": "Hidalgo"
+        },
+        {
+            "id": "MX14",
+            "nombre": "Jalisco"
+        },
+        {
+            "id": "MX15",
+            "nombre": "México"
+        },
+        {
+            "id": "MX16",
+            "nombre": "Michoacán de Ocampo"
+        },
+        {
+            "id": "MX17",
+            "nombre": "Morelos"
+        },
+        {
+            "id": "MX18",
+            "nombre": "Nayarit"
+        },
+        {
+            "id": "MX19",
+            "nombre": "Nuevo León"
+        },
+        {
+            "id": "MX20",
+            "nombre": "Oaxaca"
+        },
+        {
+            "id": "MX21",
+            "nombre": "Puebla"
+        },
+        {
+            "id": "MX22",
+            "nombre": "Querétaro"
+        },
+        {
+            "id": "MX23",
+            "nombre": "Quintana Roo"
+        },
+        {
+            "id": "MX24",
+            "nombre": "San Luis Potosí"
+        },
+        {
+            "id": "MX25",
+            "nombre": "Sinaloa"
+        },
+        {
+            "id": "MX26",
+            "nombre": "Sonora"
+        },
+        {
+            "id": "MX27",
+            "nombre": "Tabasco"
+        },
+        {
+            "id": "MX28",
+            "nombre": "Tamaulipas"
+        },
+        {
+            "id": "MX29",
+            "nombre": "Tlaxcala"
+        },
+        {
+            "id": "MX30",
+            "nombre": "Veracruz"
+        },
+        {
+            "id": "MX31",
+            "nombre": "Yucatán"
+        },
+        {
+            "id": "MX32",
+            "nombre": "Zacatecas"
+        }
+    ]
+}
+
+

@@ -1,0 +1,37 @@
+<div ng-form name="this_form">
+    <div class="row col_special">
+<!--        <p class="sint_label">FECHA</p>-->
+        <div class="col-xs-4 no_left_margin">
+            <div class="form-group event_date_drops">
+                <ui-select ng-model="dx.anio">
+                    <ui-select-match placeholder="{{opt_str}}AÑO">{{$select.selected.anio}}</ui-select-match>
+                    <ui-select-choices repeat="x in get_list_anio | filter: $select.search">
+                        <span>{{x.anio}}</span> 
+                    </ui-select-choices>
+                </ui-select>
+            </div> 
+        </div>
+        <div class="col-xs-4 col_special">
+            <div class="form-group event_date_drops">
+                <ui-select ng-model="dx.mes">
+                    <ui-select-match placeholder="{{opt_str}}MES">{{$select.selected.nombreMes}}</ui-select-match>
+                    <ui-select-choices repeat="x in get_list_mes | filter: $select.search">
+                        <span>{{x.nombreMes}}</span>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+        <div class="col-xs-4 no_right_margin">
+            <div class="form-group event_date_drops">
+                <ui-select ng-model="dx.dia">
+                    <ui-select-match placeholder="{{opt_str}}DÍA">{{$select.selected.dia}}</ui-select-match>
+                    <ui-select-choices repeat="x in get_list_dia | filter: $select.search">
+                        <span>{{x.dia}}</span>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+    </div>
+</div>
+
+

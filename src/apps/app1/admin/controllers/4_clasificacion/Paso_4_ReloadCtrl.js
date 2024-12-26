@@ -1,0 +1,1 @@
+angular.module("APP-CLASIFICADOR-ADMIN").controller("Paso_4_ReloadCtrl",["$scope","$location","PARAMETROS","AppModelService",function(o,e,l,a){e.path("/clasificacion/eventoDelDia")}]);

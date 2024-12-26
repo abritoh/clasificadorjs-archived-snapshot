@@ -1,0 +1,87 @@
+/* arcbrth@gmail | 2024-1225 */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+body {
+    font-family: 'VT323', 'Courier New', Courier, monospace;
+    background-color: #E0F7FA;
+    color: #0288D1;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.crt-screen {
+    border: 10px solid #039BE5;
+    border-radius: 50% / 15%;
+    box-shadow: inset 0 0 10px #039BE5, 0 0 20px #039BE5;
+    background-color: #B3E5FC;
+    padding: 20px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.tree {
+    white-space: pre;
+    color: #0288D1;
+    width: 90%;
+    height: 100%;
+    overflow-y: auto;
+    font-size: 14pt;
+}
+.title {
+    text-align: center;
+    color: #0288D1;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.blinking-cursor {
+    font-weight: bold;
+    font-size: 40px;
+    color: #0288D1;
+    animation: blink 1s step-start infinite;
+}
+.crt-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(179, 229, 252, 0.1);
+    pointer-events: none;
+    z-index: 1;
+}
+.crt-screen::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAgAB/MPGIU4AAAAASUVORK5CYII=') repeat;
+    opacity: 0.02;
+    pointer-events: none;
+    z-index: 1;
+}
+@keyframes blink {
+    from, to { color: transparent }
+    50% { color: #0288D1 }
+}
+.tree::-webkit-scrollbar {
+    width: 10px;
+}
+.tree::-webkit-scrollbar-thumb {
+    background: #039BE5;
+    border-radius: 5px;
+}
+.tree::-webkit-scrollbar-track {
+    background: #B3E5FC;
+}

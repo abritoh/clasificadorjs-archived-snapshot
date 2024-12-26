@@ -1,0 +1,49 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": "",
+            "nombre": "*SELECCIONE"
+        },
+        {
+            "id": "text",
+            "nombre": "text"
+        },
+        {
+            "id": "number",
+            "nombre": "number"
+        },
+        {
+            "id": "image",
+            "nombre": "image"
+        },
+        {
+            "id": "price",
+            "nombre": "price"
+        },
+        {
+            "id": "raw_html",
+            "nombre": "raw Html"
+        },
+        {
+            "id": "safe_html",
+            "nombre": "safe html"
+        },
+        {
+            "id": "geopoint",
+            "nombre": "geopoint"
+        },
+        {
+            "id": "url",
+            "nombre": "url"
+        },
+        {
+            "id": "date",
+            "nombre": "date"
+        }
+    ]
+}
+
+

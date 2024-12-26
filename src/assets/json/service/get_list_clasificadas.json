@@ -1,0 +1,619 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id_nota": "turn0news67",
+            "titulo": "Extinción de la Policía Federal en México: transición a la Guardia Nacional",
+            "archivotipo": "",
+            "cuerpo": "La Policía Federal de México, con más de 90 años de servicio, fue oficialmente disuelta el 1 de enero de 2020, culminando un proceso de transición hacia la Guardia Nacional. Esta reestructuración, iniciada con la publicación de la Ley de la Guardia Nacional el 27 de mayo de 2019, otorgó un periodo de hasta 18 meses para la integración completa de las fuerzas. La creación de la Guardia Nacional buscó fortalecer la seguridad pública y enfrentar de manera más efectiva al crimen organizado, incorporando elementos de la Policía Federal, Policía Militar y Policía Naval bajo un mando unificado. ARISTEGUI NOTICIAS",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.infobae.com/resizer/v2/CXIAF5VGG5FPHFIN2ILUJEGDJQ.jpg?auth=99c8fb0d3f3635529c6cf3a8f42141122da499bd0579f7b39b3c302dd7b592b0&smart=true&width=992&height=661&quality=85"
+            ],
+            "palabrascve": [
+                "Policía Federal",
+                "Guardia Nacional",
+                "México"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.infobae.com/america/mexico/2019/12/31/el-ultimo-dia-de-la-policia-federal-luego-de-90-anos-se-extingue-el-cuerpo-en-medio-de-deudas-y-acusaciones/",
+            "medio": "Infobae",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2019-12-31T00:00:00-06:00",
+            "fechapublicacion": "2019-12-31T00:00:00-06:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news141",
+            "titulo": "Mexico's president may be toughening fight with drug cartels",
+            "archivotipo": "",
+            "cuerpo": "Mexican President Claudia Sheinbaum has taken a tougher stance against drug cartels, deploying thousands of troops, including special forces, to Sinaloa state amidst increasing violence. Her approach marks a shift from the 'hugs not bullets' strategy of her predecessor, Andres Manuel Lopez Obrador, towards a more aggressive military-driven strategy. This strategic change might align with the policies of U.S. President-elect Donald Trump, who has demanded Mexico do more to curb drug trafficking and illegal migration. The escalated military presence, compared to operations from previous administrations, has already resulted in significant drug seizures and high-profile arrests. However, this approach faces criticism for potentially inciting further violence and human rights violations. Security experts believe the new strategy may be partly driven by external pressures, such as Trump's tariff threats, indicating an acknowledgement of the previous strategy's shortcomings. The escalating violence in Sinaloa and recent casualties have raised concerns about replicating this strategy nationwide.",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.reuters.com/resizer/abc123/800x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/def456.jpg"
+            ],
+            "palabrascve": [
+                "drug cartels",
+                "Mexico",
+                "Claudia Sheinbaum",
+                "Sinaloa",
+                "military strategy"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.reuters.com/world/americas/mexicos-president-may-be-toughening-fight-with-drug-cartels-2024-12-24/",
+            "medio": "Reuters",
+            "tipo": "Medios En Linea",
+            "subtipo": "Prensa En Linea",
+            "fechacreacion": "2024-12-24T16:55:47-05:00",
+            "fechapublicacion": "2024-12-24T11:49:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news68",
+            "titulo": "Genaro García Luna condenado a 38 años de prisión en Estados Unidos",
+            "archivotipo": "",
+            "cuerpo": "Genaro García Luna, exsecretario de Seguridad Pública de México entre 2006 y 2012, fue condenado a 38 años de prisión en Estados Unidos por colaborar con el Cártel de Sinaloa a cambio de sobornos millonarios. El juez federal Brian M. Cogan impuso la sentencia, que también incluye una multa de 2 millones de dólares. García Luna fue trasladado recientemente a una prisión en Virginia, donde cumplirá su condena. DEPARTAMENTO DE JUSTICIA",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.bbc.com/mundo/articles/cj31dr08g1eo"
+            ],
+            "palabrascve": [
+                "Genaro García Luna",
+                "condena",
+                "Estados Unidos"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.bbc.com/mundo/articles/cj31dr08g1eo",
+            "medio": "BBC Mundo",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2024-12-19T00:00:00-06:00",
+            "fechapublicacion": "2024-12-19T00:00:00-06:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "norma_pina_reforma_constitucional01",
+            "titulo": "Norma Piña and the Constitutional Reform in Mexico",
+            "archivotipo": "",
+            "cuerpo": "Norma Piña, the current president of Mexico's Supreme Court, has been at the forefront of discussions surrounding the proposed constitutional reforms in the country. Piña has expressed concerns over the potential implications of these reforms, particularly regarding the balance of power between branches of government and the protection of judicial independence. The reforms, which are part of the government’s plan to increase control over various sectors, have raised alarm among legal experts and civil society organizations who fear that they could undermine democratic institutions. Piña has urged lawmakers to carefully consider the long-term consequences of these changes and their impact on the Mexican legal system. ([source](https://www.eluniversal.com.mx))",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.eluniversal.com.mx/assets/images/reformas-norma-pina.jpg"
+            ],
+            "palabrascve": [
+                "Norma Piña",
+                "constitutional reform",
+                "Mexico",
+                "judicial independence"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.eluniversal.com.mx",
+            "medio": "El Universal",
+            "tipo": "Online Media",
+            "subtipo": "National News",
+            "fechacreacion": "2024-08-05T12:00:00-05:00",
+            "fechapublicacion": "2024-08-05T12:00:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "news5",
+            "titulo": "El Tren Maya: Incremento en costos y preocupaciones ambientales",
+            "archivotipo": "",
+            "cuerpo": "El megaproyecto del Tren Maya, impulsado por el gobierno de México, enfrenta críticas por su elevado costo y su impacto ambiental. El presupuesto inicial ha aumentado en más del 70%, alcanzando los 320,000 millones de pesos. Organizaciones ambientalistas advierten sobre la deforestación de más de 2,500 hectáreas de selva en la península de Yucatán, lo que pone en riesgo ecosistemas únicos y especies en peligro de extinción. Además, comunidades indígenas de la región se han manifestado en contra del proyecto, argumentando que no se respetó su derecho a la consulta previa. Mientras el gobierno asegura que el Tren Maya promoverá el desarrollo económico y turístico de la región, los opositores exigen transparencia y medidas para mitigar el daño ambiental.",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.bbc.com/mundo/noticias-america-latina-62563089"
+            ],
+            "palabrascve": [
+                "Tren Maya",
+                "Deforestación",
+                "Costo",
+                "Ambientalismo"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.bbc.com/mundo/noticias-america-latina-62563089",
+            "medio": "BBC Mundo",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2024-12-24T00:00:00-05:00",
+            "fechapublicacion": "2024-12-24T00:00:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news147",
+            "titulo": "El Senado pone fin a siete órganos y entes autónomos, incluido el INAI",
+            "archivotipo": "",
+            "cuerpo": "El Congreso mexicano ha eliminado siete órganos y entes autónomos, incluido el Instituto Nacional de Transparencia y Acceso a la Información (INAI). Esta decisión fue aprobada por el Senado y ahora requiere la ratificación de al menos 17 de las 32 legislaturas estatales. Con el partido gobernante Morena controlando 24 congresos locales, se espera una rápida aprobación. La eliminación de estos organismos implica la transferencia de sus funciones a diferentes secretarías de gobierno, lo que ha sido criticado por la oposición, ya que argumentan que esto compromete la transparencia y convierte al Estado en juez y parte. La reforma también incluye la creación de un nuevo órgano descentralizado que asumirá las funciones de la Comisión Federal de Competencia Económica (Cofece) y el Instituto Federal de Telecomunicaciones (IFT), en cumplimiento con compromisos del TMEC. La oposición ha señalado que la desaparición del INAI se debe a la incomodidad que la transparencia genera para el gobierno. Además del INAI, serán eliminados el Coneval, la CRE, la CNH y Mejoredu.",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://elpais.com/mexico/2024-11-29/el-senado-extermina-siete-organos-y-entes-autonomos-incluido-el-inai.html"
+            ],
+            "palabrascve": [
+                "INAI",
+                "Senado",
+                "órganos autónomos",
+                "transparencia"
+            ],
+            "videos": [],
+            "urlmedio": "https://elpais.com/mexico/2024-11-29/el-senado-extermina-siete-organos-y-entes-autonomos-incluido-el-inai.html",
+            "medio": "El País",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2024-11-29T16:55:47-05:00",
+            "fechapublicacion": "2024-11-29T11:49:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news20",
+            "titulo": "Trump declarará a los cárteles mexicanos del narco como 'organizaciones terroristas'",
+            "archivotipo": "",
+            "cuerpo": "El presidente electo de Estados Unidos, Donald Trump, ha anunciado su intención de declarar a los cárteles mexicanos del narcotráfico como organizaciones terroristas extranjeras cuando asuma el cargo el 20 de enero. Trump afirmó que expulsará a los miembros de pandillas extranjeras y utilizará el poder de las fuerzas de seguridad federales para desmantelar y destruir las redes criminales que operan ilegalmente en suelo estadounidense. Este anuncio se hizo durante un foro de la organización ultraconservadora Turning Point en Phoenix, Arizona. Además, Trump mencionó que planea lanzar una campaña de concienciación sobre los efectos adversos de las drogas y reafirmó su intención de aplicar tarifas del 25% a México y Canadá si no se resuelven los problemas de la frontera y del narcotráfico. También habló sobre otros temas, incluyendo una reciente crisis en el Capitolio y el control del Canal de Panamá.",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://elpais.com/internacional/2024-12-22/trump-declarara-a-los-carteles-mexicanos-del-narco-como-organizaciones-terroristas.html"
+            ],
+            "palabrascve": [
+                "Trump",
+                "cárteles mexicanos",
+                "organizaciones terroristas"
+            ],
+            "videos": [],
+            "urlmedio": "https://elpais.com/internacional/2024-12-22/trump-declarara-a-los-carteles-mexicanos-del-narco-como-organizaciones-terroristas.html",
+            "medio": "El País",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2024-12-22T16:55:47-05:00",
+            "fechapublicacion": "2024-12-22T11:49:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news149",
+            "titulo": "Estado narco y/o Estado fallido",
+            "archivotipo": "",
+            "cuerpo": "El artículo aclara que en México no hay distinción entre un Estado narco y un Estado fallido, ya que ambos coexisten y se fortalecen mutuamente. Esta realidad se manifiesta en el control territorial que ejercen los cárteles de la droga y la corrupción política generalizada. Menciona cómo la violencia ha afectado a la población, incluyendo desapariciones, violencia en comunidades, y la complicidad de políticos con los narcotraficantes. Destaca la guerra interna entre diferentes cárteles, como en Culiacán entre chapitos y mayos. Además, apunta la existencia de numerosos cárteles en el país y el impacto de este conflicto en la vida cotidiana de los mexicanos, reflejando una cruda y aterradora realidad que vive la nación.",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://elpais.com/mexico/2024-09-23/estado-narco-yo-estado-fallido.html"
+            ],
+            "palabrascve": [
+                "Estado narco",
+                "Estado fallido",
+                "México",
+                "cárteles de la droga"
+            ],
+            "videos": [],
+            "urlmedio": "https://elpais.com/mexico/2024-09-23/estado-narco-yo-estado-fallido.html",
+            "medio": "El País",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2024-09-23T16:55:47-05:00",
+            "fechapublicacion": "2024-09-23T11:49:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news19",
+            "titulo": "Sinaloa y el dilema de Sheinbaum: apagar el fuego sin quemarse",
+            "archivotipo": "",
+            "cuerpo": "El artículo aborda los desafíos que enfrenta Claudia Sheinbaum, presidenta de México, en el estado de Sinaloa debido a la guerra entre Los Chapitos y Los Mayos tras la captura del capo Ismael El Mayo Zambada por autoridades estadounidenses. La presidenta ha enviado a Omar García Harfuch para contener la situación, aunque enfrenta sospechas sobre vínculos del gobernador de Sinaloa, Rubén Rocha, con el crimen organizado. En un viaje a Sinaloa, Sheinbaum expresó su apoyo a Rocha, aunque su entorno sugiere mantener distancia debido a posibles revelaciones de El Mayo en su juicio en EE.UU. La narcopolítica es un problema recurrente en México, con casos emblemáticos como Ayotzinapa y la Operación Enjambre. El juicio contra El Mayo podría destapar conexiones políticas comprometedoras, lo que mantiene alta la tensión entre las autoridades mexicanas y el crimen organizado.",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://elpais.com/mexico/2024-12-25/sinaloa-y-el-dilema-de-sheinbaum-apagar-el-fuego-sin-quemarse.html"
+            ],
+            "palabrascve": [
+                "Sheinbaum",
+                "Sinaloa",
+                "narcopolítica"
+            ],
+            "videos": [],
+            "urlmedio": "https://elpais.com/mexico/2024-12-25/sinaloa-y-el-dilema-de-sheinbaum-apagar-el-fuego-sin-quemarse.html",
+            "medio": "El País",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2024-12-25T00:00:00-06:00",
+            "fechapublicacion": "2024-12-25T00:00:00-06:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news70",
+            "titulo": "Generación distribuida de energía en México: impulso a fuentes limpias",
+            "archivotipo": "",
+            "cuerpo": "La generación distribuida de energía en México se refiere a la producción de electricidad a través de instalaciones de pequeña escala, generalmente menores a 1,000 kW, ubicadas cerca de los centros de consumo. Esta modalidad permite a usuarios generar su propia energía, contribuyendo a la meta nacional de alcanzar un 35% de generación eléctrica a partir de fuentes limpias para 2024. Con la implementación de paneles solares, aerogeneradores y otras tecnologías, hogares y pequeñas empresas pueden no solo reducir su dependencia de las redes tradicionales, sino también inyectar excedentes a la red eléctrica nacional a través del esquema de interconexión. Las políticas actuales impulsan subsidios y estímulos fiscales para fomentar la adopción de esta tecnología, promoviendo así un modelo energético más sustentable y resiliente. (gob.mx)",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.gob.mx/conuee/acciones-y-programas/que-es-la-generacion-distribuida-estados-y-municipios"
+            ],
+            "palabrascve": [
+                "generación distribuida",
+                "energía",
+                "México"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.gob.mx/conuee/acciones-y-programas/que-es-la-generacion-distribuida-estados-y-municipios",
+            "medio": "Gobierno de México",
+            "tipo": "Medios En Línea",
+            "subtipo": "Sitio Oficial",
+            "fechacreacion": "2024-12-25T00:00:00-06:00",
+            "fechapublicacion": "2024-12-25T00:00:00-06:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "ai_china_military01",
+            "titulo": "China Invests Billions in AI for Military Superiority",
+            "archivotipo": "",
+            "cuerpo": "China is heavily investing in artificial intelligence as part of its strategy to achieve military superiority. The country is developing AI-driven systems for autonomous vehicles, smart weapons, and advanced surveillance technologies. The Chinese government has allocated billions in funding to AI research, aiming to enhance military efficiency and maintain national security. Experts believe that this technological arms race will reshape global power dynamics, with AI playing a critical role in the future of warfare. China's move to dominate AI in the military sphere has raised concerns among other world powers, particularly the United States. ([source](https://www.bbc.com))",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.bbc.com/news/world"
+            ],
+            "palabrascve": [
+                "China",
+                "AI",
+                "military",
+                "investment",
+                "superiority"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.bbc.com",
+            "medio": "BBC News",
+            "tipo": "Online Media",
+            "subtipo": "International News",
+            "fechacreacion": "2024-06-15T12:00:00-05:00",
+            "fechapublicacion": "2024-06-15T12:00:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news69",
+            "titulo": "Guardia Nacional asume funciones de la extinta Policía Federal en México",
+            "archivotipo": "",
+            "cuerpo": "Tras la disolución de la Policía Federal, la Guardia Nacional ha asumido sus funciones en México. Originalmente concebida como una entidad de mando civil, la Guardia Nacional ha ampliado sus responsabilidades más allá de la seguridad pública. Recientemente, se ha iniciado su transferencia al control del Ejército, generando debates sobre la militarización de la seguridad en el país. CNN EN ESPAÑOL",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://cnnespanol.cnn.com/2024/06/26/que-es-guardia-nacional-mexico-como-opera-de-quien-depende-orix"
+            ],
+            "palabrascve": [
+                "Guardia Nacional",
+                "Policía Federal",
+                "México"
+            ],
+            "videos": [],
+            "urlmedio": "https://cnnespanol.cnn.com/2024/06/26/que-es-guardia-nacional-mexico-como-opera-de-quien-depende-orix",
+            "medio": "CNN en Español",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2024-06-26T00:00:00-06:00",
+            "fechapublicacion": "2024-06-26T00:00:00-06:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "ai_climate_change_model01",
+            "titulo": "AI Breakthrough Enhances Global Climate Change Models",
+            "archivotipo": "",
+            "cuerpo": "Artificial intelligence is playing a crucial role in improving climate change models, enabling scientists to predict environmental shifts with greater accuracy. Researchers from around the world have partnered to develop AI systems that analyze vast amounts of climate data, including atmospheric conditions, ocean temperatures, and carbon emissions, to create more precise forecasts. These advancements are expected to help governments and organizations make more informed decisions regarding climate action and policy. The AI-driven models are also being used to track the impact of climate change on biodiversity and ecosystems, offering solutions for mitigation. ([source](https://www.nationalgeographic.com))",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.nationalgeographic.com/environment/climate-change/ai-climate-models"
+            ],
+            "palabrascve": [
+                "AI",
+                "climate change",
+                "forecasting",
+                "environment"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.nationalgeographic.com",
+            "medio": "National Geographic",
+            "tipo": "Online Media",
+            "subtipo": "International News",
+            "fechacreacion": "2024-07-20T08:00:00-05:00",
+            "fechapublicacion": "2024-07-20T08:00:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "reforma_constitucional_mexico_riesgo01",
+            "titulo": "The Constitutional Reform in Mexico: A Risk to Democracy",
+            "archivotipo": "",
+            "cuerpo": "The ongoing discussions regarding the constitutional reform in Mexico have raised significant concerns among political analysts and human rights advocates. Critics argue that the proposed changes could present a major risk to the country's democratic system by consolidating more power in the executive branch, while reducing the effectiveness of checks and balances. The reform package includes modifications that would alter the structure and operation of several key institutions, including the judiciary, electoral bodies, and civil rights protections. Experts warn that these changes could pave the way for authoritarian governance and erode the rule of law in Mexico. ([source](https://www.reforma.com))",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.reforma.com/imagenes/reforma-constitucional-mexico.jpg"
+            ],
+            "palabrascve": [
+                "constitutional reform",
+                "Mexico",
+                "democracy",
+                "risks"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.reforma.com",
+            "medio": "Reforma",
+            "tipo": "Online Media",
+            "subtipo": "National News",
+            "fechacreacion": "2024-08-12T15:00:00-05:00",
+            "fechapublicacion": "2024-08-12T15:00:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news21",
+            "titulo": "¿Un Gobierno ambientalista? El reto de Sheinbaum",
+            "archivotipo": "",
+            "cuerpo": "El Gobierno de Claudia Sheinbaum enfrenta significativos desafíos ambientales, incluyendo un recorte presupuestal del 60%, crisis de agua en el sureste, pérdida de árboles, y más de 20,500 muertes por mala calidad del aire. La administración anterior priorizó energías fósiles y programas como 'Sembrando Vida', que fracasaron y aumentaron la deforestación. El presupuesto ambiental ha mostrado una tendencia a la baja, afectando áreas cruciales como la Comisión Nacional de Áreas Naturales Protegidas (Conanp). Proyectos faraónicos como el Tren Maya, la reactivación del programa Pago por Servicios Ambientales (PSA), y el fortalecimiento de la Procuraduría Federal de Protección al Ambiente (Profepa) son vitales para la protección ambiental. Sheinbaum ha demostrado compromiso con la transición energética y la reforestación, pero necesita apoyo de la sociedad civil para lograr un equilibrio ecológico efectivo.",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://elpais.com/mexico/opinion/2024-10-17/un-gobierno-ambientalista-el-reto-de-sheinbaum.html"
+            ],
+            "palabrascve": [
+                "Sheinbaum",
+                "medio ambiente",
+                "México"
+            ],
+            "videos": [],
+            "urlmedio": "https://elpais.com/mexico/opinion/2024-10-17/un-gobierno-ambientalista-el-reto-de-sheinbaum.html",
+            "medio": "El País",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2024-10-17T00:00:00-06:00",
+            "fechapublicacion": "2024-10-17T00:00:00-06:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "mexico_politicos_corrupcion_mundo03",
+            "titulo": "Mexico's Corruption Crisis: Political Leaders Under Scrutiny",
+            "archivotipo": "",
+            "cuerpo": "Mexico remains a country plagued by political corruption, with many of its political leaders among the most corrupt worldwide. Investigations into high-ranking politicians continue to uncover systemic bribery, money laundering, and abuse of power. While some political figures have been prosecuted, the country's justice system faces criticism for being slow and inefficient. The persistence of these issues has prompted international organizations to condemn Mexico's lack of progress in fighting corruption. Transparency International and other organizations continue to highlight the need for deep structural reforms in the Mexican political system. ([source](https://www.excelsior.com.mx))",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.excelsior.com.mx/assets/images/mexico-politicos-corrupcion.jpg"
+            ],
+            "palabrascve": [
+                "Mexico",
+                "political corruption",
+                "leaders",
+                "accountability"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.excelsior.com.mx",
+            "medio": "Excélsior",
+            "tipo": "Online Media",
+            "subtipo": "National News",
+            "fechacreacion": "2024-09-28T14:15:00-05:00",
+            "fechapublicacion": "2024-09-28T14:15:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news22",
+            "titulo": "Mexico's Maya Train is destroying ancient caves. Learn about the beautiful 'cenotes' under threat",
+            "archivotipo": "",
+            "cuerpo": "La construcción del Tren Maya en México, un proyecto de más de 30 mil millones de dólares impulsado por el presidente Andrés Manuel López Obrador, está causando la destrucción de un frágil sistema de cavernas, ríos subterráneos y cenotes en la Península de Yucatán. Aunque el proyecto busca conectar destinos turísticos y zonas rurales, ha generado críticas por la tala de millones de árboles y la perforación de la piedra caliza con pilares de acero, lo que ha provocado rupturas y contaminación en las cavernas. Este ecosistema subterráneo es crucial como fuente de agua en una región que enfrenta una crisis hídrica. Sin estudios ambientales completos, el gobierno ha avanzado la construcción evadiendo la supervisión y enfrentándose a críticos que acusan a la administración de socavar las instituciones democráticas.",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://apnews.com/article/ea36514d061a670b0a3833e4fdc8e3e0"
+            ],
+            "palabrascve": [
+                "Tren Maya",
+                "cenotes",
+                "deforestación"
+            ],
+            "videos": [],
+            "urlmedio": "https://apnews.com/article/ea36514d061a670b0a3833e4fdc8e3e0",
+            "medio": "AP News",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2024-06-25T00:00:00-06:00",
+            "fechapublicacion": "2024-06-25T00:00:00-06:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "mexico_programas_sociales_critica_ineficiencia01",
+            "titulo": "Ineficiencia en la Ejecución de los Programas Sociales en México",
+            "archivotipo": "",
+            "cuerpo": "Diversas organizaciones sociales han señalado que la implementación de los programas sociales del gobierno mexicano ha sido ineficaz debido a la falta de infraestructura adecuada y de un sistema eficiente de distribución. La burocracia y la corrupción son algunos de los problemas que afectan la efectividad de estos programas. Aunque se han destinado recursos importantes, la ejecución en el terreno no ha sido óptima, y muchos beneficiarios aún enfrentan obstáculos para acceder a los beneficios. ([source](https://www.excelsior.com.mx/nacional/ineficiencia-ejecucion-programas-sociales/))",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.excelsior.com.mx/nacional/ineficiencia-programas-sociales.jpg"
+            ],
+            "palabrascve": [
+                "ineficiencia",
+                "programas sociales",
+                "burocracia",
+                "corrupción",
+                "distribución"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.excelsior.com.mx/nacional/ineficiencia-ejecucion-programas-sociales",
+            "medio": "Excélsior",
+            "tipo": "Online Media",
+            "subtipo": "National News",
+            "fechacreacion": "2024-12-25T18:00:00-05:00",
+            "fechapublicacion": "2024-12-10T12:00:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "mexico_huachicol_adulterated_fuel_2024",
+            "titulo": "Aumento de Quejas por Combustible Adulterado por Huachicol",
+            "archivotipo": "",
+            "cuerpo": "La Comisión Reguladora de Energía (CRE) reporta un aumento en las quejas de vehículos dañados debido a combustible adulterado. La creciente actividad de huachicoleros ha afectado el suministro y la calidad del combustible en México. Estos actos de robo de combustible no solo afectan a Pemex, sino que también ponen en riesgo la seguridad de los vehículos y generan costos adicionales para los ciudadanos. ([source](https://mexicobusiness.news/automotive/news/adulterated-fuel-sparks-surge-vehicle-damage-complaints?utm_source=chatgpt.com))",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://mexicobusiness.news/automotive/news/adulterated-fuel-sparks-surge-vehicle-damage-complaints.jpg"
+            ],
+            "palabrascve": [
+                "huachicol",
+                "combustible adulterado",
+                "daños a vehículos",
+                "Pemex",
+                "seguridad"
+            ],
+            "videos": [],
+            "urlmedio": "https://mexicobusiness.news",
+            "medio": "Mexico Business News",
+            "tipo": "Online Media",
+            "subtipo": "National News",
+            "fechacreacion": "2024-12-25T18:00:00-05:00",
+            "fechapublicacion": "2024-12-05T12:00:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "turn0news23",
+            "titulo": "Cártel del Noreste manda condolencias a David Monreal por asesinatos de sus familiares",
+            "archivotipo": "",
+            "cuerpo": "Presuntos miembros del Cártel del Noreste colocaron una manta en Fresnillo, Zacatecas, dirigida a David Monreal Ávila, gobernador del estado, expresando condolencias por los asesinatos de su primo, Juan Pérez Guardado, y su sobrino, Jorge Antonio Monreal Martínez. El mensaje, que decía 'Lamentamos la pérdida de sus familiares', fue encontrado en una reja en una de las ciudades más violentas del país. Estos asesinatos se enmarcan en la creciente violencia en Zacatecas, donde cárteles como el CJNG y el Cártel de Sinaloa se disputan el control del territorio. \n\nLa situación refleja la grave crisis de inseguridad que enfrenta México, especialmente en estados del centro-norte como Zacatecas, donde la violencia por el narcotráfico ha incrementado en los últimos años. Organizaciones civiles y especialistas han denunciado la infiltración de grupos delictivos en instituciones locales y la falta de estrategias claras para mitigar la violencia. El gobernador Monreal ha enfrentado crecientes críticas por la incapacidad de su administración para controlar la inseguridad y la percepción de vínculos cercanos entre figuras políticas y los cárteles.",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://www.infobae.com/america/mexico/2024/12/24/cartel-del-noreste-manda-condolencias-a-david-monreal-por-asesinatos-de-sus-familiares/"
+            ],
+            "palabrascve": [
+                "Zacatecas",
+                "David Monreal",
+                "Cártel del Noreste"
+            ],
+            "videos": [],
+            "urlmedio": "https://www.infobae.com/america/mexico/2024/12/24/cartel-del-noreste-manda-condolencias-a-david-monreal-por-asesinatos-de-sus-familiares/",
+            "medio": "Infobae",
+            "tipo": "Medios En Línea",
+            "subtipo": "Prensa En Línea",
+            "fechacreacion": "2024-12-24T00:00:00-06:00",
+            "fechapublicacion": "2024-12-24T00:00:00-06:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "mexico_huachicol_fuel_theft_cartels01",
+            "titulo": "Huachicol: El Problema del Robo de Combustible y su Impacto en la Seguridad de México",
+            "archivotipo": "",
+            "cuerpo": "El robo de combustible, conocido como huachicol, sigue siendo uno de los principales problemas de seguridad en México. Las bandas criminales han intensificado el robo y la venta ilegal de combustible, lo que provoca una reducción de la confianza en las autoridades. Las autoridades federales están tomando medidas, pero el problema persiste debido a la alta demanda de combustible robado y la falta de controles en zonas rurales. Los carteles de drogas, como el de Jalisco, también están involucrados, lo que complica aún más la situación. ([source](https://insightcrime.org/news/heightened-fuel-theft-across-mexico-as-international-oil-prices-remain-high/))",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://insightcrime.org/news/heightened-fuel-theft-across-mexico-as-international-oil-prices-remain-high.jpg"
+            ],
+            "palabrascve": [
+                "huachicol",
+                "robo de combustible",
+                "carteles de drogas",
+                "seguridad",
+                "México"
+            ],
+            "videos": [],
+            "urlmedio": "https://insightcrime.org/news/heightened-fuel-theft-across-mexico-as-international-oil-prices-remain-high",
+            "medio": "Insight Crime",
+            "tipo": "Online Media",
+            "subtipo": "National News",
+            "fechacreacion": "2024-12-25T18:00:00-05:00",
+            "fechapublicacion": "2024-09-19T12:00:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        },
+        {
+            "id_nota": "mexico_politicos_corrupcion_mundo01",
+            "titulo": "Mexican Politicians Among the Most Corrupt in the World",
+            "archivotipo": "",
+            "cuerpo": "According to the 2023 Corruption Perceptions Index by Transparency International, Mexico ranks 126 out of 180 countries, indicating a high level of perceived corruption in the public sector. For the fourth consecutive year, Mexico maintained a score of 31 out of 100. The report highlights numerous cases of bribery, embezzlement, and abuse of power involving Mexican politicians. Despite efforts to combat corruption, the country continues to struggle with systemic issues that hinder significant progress. ([source](https://politica.expansion.mx/mexico/2024/01/30/indice-percepcion-corrupcion-mexico-mantiene-lugar-126))",
+            "archivotamano": "4458",
+            "statusprioridad": "1",
+            "statusgeneral": "1",
+            "audios": [],
+            "imagenes": [
+                "https://politica.expansion.mx/mexico/2024/01/30/indice-percepcion-corrupcion-mexico-mantiene-lugar-126.jpg"
+            ],
+            "palabrascve": [
+                "Mexico",
+                "corruption",
+                "politicians",
+                "corrupt leaders"
+            ],
+            "videos": [],
+            "urlmedio": "https://politica.expansion.mx/mexico/2024/01/30/indice-percepcion-corrupcion-mexico-mantiene-lugar-126",
+            "medio": "Expansión Política",
+            "tipo": "Online Media",
+            "subtipo": "National News",
+            "fechacreacion": "2024-12-23T11:49:00-05:00",
+            "fechapublicacion": "2024-12-23T11:49:00-05:00",
+            "notificada": false,
+            "bloqueClasif": 0
+        }
+    ]
+}

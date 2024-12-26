@@ -1,0 +1,109 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data":
+            {
+                "idNota": "6s3fQfrFzQ",
+                "eventoComoApareceEnNota": "Incendio consume Asilo",
+                "fechaEvento": "19/02/2015",
+                "ubicacionComoApareceEnNota": "Mexicali",
+                "idUbicacionEvento": "MX20001",
+                "idPaisEvento": "MX",
+                "idEstadoEvento": "MX09",
+                "idMetropoliEvento": "",
+                "idMunicipioEvento": "MX09001",
+                "idLocalidadEvento": "MX090010001",
+                "idGeoreferenciaEvento": "CoordenadasGeograficas_Lat_18_861167Long_-99_117427",
+                "latitudEvento": "15457.78987",
+                "longitudEvento": "15457.78987",
+                "idInmuebleEvento": "Asilo_Hermoso_Atardecer_aft95EFTRHWsENLt",
+                "nombreInmuebleEvento": "Asilo de ancianos",
+                "inmuebleEvento": "",
+                "otroTipoInfraestructuraEvento": "",
+                "PuntoDeReferenciaEvento": "",
+                "referenciaComoApareceEnNotaEvento": "Una Malla de metal",
+                "actividadesUI":
+                        [
+                            {
+                                "actividadComoApareceEnNota": "El fuego inicio",
+                                "momentoActividad": "",
+                                "horaExactaActividad": "18:05:00",
+                                "referenciaTemporalActividad": "",
+                                "mismaUbicacionDelEvento": "",
+                                "ubicacionComoApareceEnNotaActividad": "Mexicali",
+                                "idLugarActividad": "MX20001",
+                                "idPaisActividad": "MX",
+                                "idEstadoActividad": "MX09",
+                                "idMetropoliActividad": "",
+                                "idMunicipioActividad": "MX09001",
+                                "idLocalidadActividad": "MX090010001",
+                                "idGeoreferenciaActividad": "CoordenadasGeograficas_Lat_18_861167Long_-99_117427",
+                                "latitudActividad": "15457.78987",
+                                "longitudActividad": "15457.78987",
+                                "idInmuebleActividad": "Asilo_Hermoso_atardecer_aft95EFTRHWsENLt",
+                                "nombreInmuebleActividad": "asilo de ancianos",
+                                "inmuebleActividad": "",
+                                "otroTipoInfraestructuraActividad": "",
+                                "PuntoDeReferenciaActividad": "",
+                                "referenciaComoApareceEnNotaActividad": "Una Malla de metal"
+                            }
+                        ],
+                "territorialidadComoApareceEnNota": "Territorio",
+                "tipoTerritorialidad": "",
+                "relacionadorUI":
+                        [
+                            {
+                                "idSujeto": "",
+                                "paternoSujeto": "DÍAZ",
+                                "maternoSujeto": "OCHOA",
+                                "nombreSujeto": "JAIME",
+                                "idOrganizacion": "",
+                                "nombreOrganizacion": "Organizacion",
+                                "siglasOrganizacion": "",
+                                "tipoOrganizacion": "",
+                                "paisOrganizacion": "",
+                                "estadoOrganizacion": "",
+                                "municipioOrganizacion": ""
+                                
+                            },
+                            {
+                                "idOrganizacion": "",
+                                "nombreOrganizacion": "Organizacion",
+                                "siglasOrganizacion": "",
+                                "tipoOrganizacion": "",
+                                "paisOrganizacion": "",
+                                "estadoOrganizacion": "",
+                                "municipioOrganizacion": ""
+                            },
+                            {
+                                "idSujeto": "",
+                                "paternoSujeto": "DÍAZ",
+                                "maternoSujeto": "OCHOA",
+                                "nombreSujeto": "JAIME"
+                            }
+                        ],
+                "eventoAsociado":
+                        [
+                            {
+                                "nombreEvento": "",
+                                "lugarEvento": "",
+                                "tiempoEvento": "",
+                                "idSujetoAsociado": [
+                                    "id1",
+                                    "id2",
+                                    "idN"
+                                ],
+                                "idOrganizacionAsociado": [
+                                    "Org1",
+                                    "Org2",
+                                    "OrgN"
+                                ]
+                            }
+                        ]
+            }
+
+
+}
+
+

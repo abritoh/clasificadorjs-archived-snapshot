@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/04/2015, 01:54:55 PM
+    Author     : avalero
+*/
+
+.perso-tooltip{
+    position:absolute;
+    width:auto;
+    background: rgba( 50, 138, 176,1);
+    padding:4px;
+    border-radius:5px;
+    font-size:1.2em;
+    display:none;
+    color: rgb( 255, 255, 255 );
+    padding-left: 15px;
+     padding-right: 15px;
+    	border:solid 1px;
+      border-color:rgb(144,176,189);
+    z-index: 999;
+}
+.perso-tooltip:after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: -8px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    
+    
+   
+   border-bottom: solid 1px;
+   border-left: solid 1px;
+    background-color: rgba(50, 138, 176,1);
+    border-color:rgb(144,176,189);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    z-index: 998;
+}

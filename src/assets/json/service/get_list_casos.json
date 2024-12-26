@@ -1,0 +1,29 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "idCaso": "unoUS3Qs3s",
+            "nombreCaso": "Mali busca a sus peregrinos tras la tragedia de La Meca",
+            "descripcionCaso": "Este texto es parte de un ejemplo para el campo de Descripcion de Caso. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean m",
+            "activo": "true",
+            "fechaIniCaso": "12/02/2016",
+            "fechaFinCaso": "12/12/2016",
+            "prioridad": "Alta",
+            "totalRes": "11"
+        },
+        {
+            "idCaso": "uno5S3Q33s",
+            "nombreCaso": "Se busca Petroleo en areas africanas.",
+            "descripcionCaso": "Este texto es parte de un ejemplo para el campo de Descripcion de Caso.",
+            "activo": "false",
+            "fechaIniCaso": "03/02/2016",
+            "fechaFinCaso": "11/09/2016",
+            "prioridad": "Baja",
+            "totalRes": "11"
+        }
+    ]
+}
+
+

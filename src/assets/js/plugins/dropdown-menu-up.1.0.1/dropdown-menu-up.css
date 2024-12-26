@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/04/2015, 05:25:21 PM
+    Author     : avalero
+*/
+
+.dropdown-menu{
+    position:absolute;
+    list-style:none; /* Eliminamos los bullets */
+    margin:0px; /* Quitamos los margenes */
+    padding:0px; /* Quitamos el padding */
+    z-index:999;
+    height:100%;
+    width:100%;
+}
+.dropdown-menu ul{
+   
+}
+
+.dropdown-menu:after, .dropdown-menu ul:after, .dropdown-menu ul ul:after{
+    
+    content:'';
+    display:block;
+    clear:both;
+ }
+.dropdown-menu li {
+    
+    float:left; /* Hacemos que el menu se muestre horizontal */
+    width:19%;
+    height:40px;
+    cursor:pointer;    
+}
+
+.dropdown-menu li a{
+    display:block;
+    text-decoration:none;
+    color:#CCCCCC;
+    font-weight:bold;
+    font-size:1.2em;
+    padding:8px;
+    text-align:center;
+    margin-left:1px;
+}
+.dropdown-menu li a:hover{
+    color:rgb(0, 0, 0);
+}
+
+.dropdown-menu li > ul {
+    position:absolute;
+    list-style: none;
+    margin:0;
+    padding:0;
+    clear: both;
+    
+}
+.dropdown-menu li  ul > li{
+    text-align:center;
+    padding:0 30px 0 30px;
+    display:block;
+    clear:both;
+    box-sizing: border-box;
+    margin:0;
+    width:300px;
+    
+}
+.dropdown-menu li  ul > li > ul{
+    
+}
+.dropdown-menu li  ul > li > a{
+    display:block;
+    
+    color:rgb(255, 255, 255);
+    text-decoration: none;            
+    height:15px;
+      
+ margin-left:10px;
+    
+}
+
+.dropdown-menu-over-color1{
+    
+   background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,.3));  
+}
+.dropdown-menu-over-color1:hover{
+    
+    background-color:rgb(248, 104, 86);
+}

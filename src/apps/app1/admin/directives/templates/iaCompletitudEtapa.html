@@ -1,0 +1,138 @@
+<div class="row prefooter">
+    <div class="col-xs-3 progress_container">
+        <div class="row">
+            <div class="border_container" ng-show="dx.etapa_actual >= 1">
+                <div class="col-xs-6 border_white"></div>
+            </div>
+            <div class="col-xs-7" ng-show="dx.etapa_actual >= 1">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>ORIGEN DE LA INFORMACIÓN</p>
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <p>Tiempo de captura</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p>{{dx.completitud.origen.tiempoCaptura}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <p class="no_wrap">Porcentaje de completez</p>
+                            </div>
+                            <div class="col-xs-3 percentage_paragraph">
+                                <p>{{dx.completitud.origen.porcentajeCompletez}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5 col_total_time" ng-show="dx.etapa_actual >= 1">
+                <p class="total_time">TIEMPO TOTAL</p>
+                <p class="total_time">{{dx.completitud.origen.tiempoTotal}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 progress_container">
+        <div class="row">
+            <div class="border_container" ng-show="dx.etapa_actual >= 2">
+                <div class="col-xs-6 border_white"></div>
+            </div>
+            <div class="col-xs-7" ng-show="dx.etapa_actual >= 2">
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <p class="no_wrap">CONTENIDO DE LA UNIDAD DE INFORMACIÓN</p>
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <p>Tiempo de captura</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p>{{dx.completitud.contenido.tiempoCaptura}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <p class="no_wrap">Porcentaje de completez</p>
+                            </div>
+                            <div class="col-xs-3 percentage_paragraph">
+                                <p>{{dx.completitud.contenido.porcentajeCompletez}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5 col_total_time" ng-show="dx.etapa_actual >= 2">
+                <p class="total_time">TIEMPO TOTAL</p>
+                <p class="total_time">{{dx.completitud.contenido.tiempoTotal}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 progress_container">
+        <div class="row">
+            <div class="border_container" ng-show="dx.etapa_actual >= 3">
+                <div class="col-xs-6 border_white"></div>
+            </div>
+            <div class="col-xs-7" ng-show="dx.etapa_actual >= 3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>VALORACIÓN DE RIESGOS</p>
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <p>Tiempo de captura</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p>{{dx.completitud.valoracion.tiempoCaptura}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <p class="no_wrap">Porcentaje de completez</p>
+                            </div>
+                            <div class="col-xs-3 percentage_paragraph">
+                                <p>{{dx.completitud.valoracion.porcentajeCompletez}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5 col_total_time" ng-show="dx.etapa_actual >= 3">
+                <p class="total_time">TIEMPO TOTAL</p>
+                <p class="total_time">{{dx.completitud.valoracion.tiempoTotal}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 progress_container">
+        <div class="row">
+            <div class="border_container" ng-show="dx.etapa_actual >= 4">
+                <div class="col-xs-6 border_white"></div>
+            </div>
+            <div class="col-xs-7" ng-show="dx.etapa_actual >= 4">
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <p class="no_wrap" style="font-size: 0.95em;">CLASIFICACIÓN DE LA UNIDAD DE INFORMACIÓN</p>
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <p>Tiempo de captura</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p>{{dx.completitud.clasificacion.tiempoCaptura}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <p class="no_wrap">Porcentaje de completez</p>
+                            </div>
+                            <div class="col-xs-3 percentage_paragraph">
+                                <p>{{dx.completitud.clasificacion.porcentajeCompletez}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5 col_total_time" ng-show="dx.etapa_actual >= 4">
+                <p class="total_time">TIEMPO TOTAL</p>
+                <p class="total_time">{{dx.completitud.clasificacion.tiempoTotal}}</p>
+            </div>
+        </div>
+    </div>
+</div>

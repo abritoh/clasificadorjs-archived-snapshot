@@ -1,0 +1,129 @@
+<div id="clasificar_clasificacion" class="col_special">
+    <div class="container-fluid col_special">
+
+<!--        <div class="row col_special">
+            <div class="col-xs-2 percentage_container">{{(pasoBase - 1) * PCT_FIJO}}%</div>
+            <div class=" col-xs-2 steps_colors_container col_special">                
+                <div class="step_half" ng-class="{'step_quarter_3_full': pasoBase >= 4}"></div>
+                <div class="step_half" ng-class="{'step_quarter_2_full': pasoBase >= 3}"></div>
+                <div class="step_half" ng-class="{'step_quarter_1_full': pasoBase >= 2}"></div>
+            </div>
+        </div>-->
+
+        <div class="row col_special">
+            <div class="col-xs-3 col_special">
+                <div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-xs-11 pre_head_tray"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 head_tray">
+                                    <div class="container-fluid col_special">
+                                        <div class="row">
+                                            <div class="col-xs-8 tray_sign clasificacion" style="padding: 0.73em 1em;">EDITAR BLOQUE 4</div>
+                                            <div class="col-xs-4 news_qty ">{{Notificaciones.length}} de  {{totalRes}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 post_head_tray">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">        
+                        <div class="col-xs-11 in_filter" style="text-align: left; padding: 0;">
+                            <span class="title_filtrar" style="width: 50%; display: inline-block; padding-left: 1em;">Filtrar nota por nombre:</span> 
+                            <input type="text" ng-model="query" ia-select-on-click
+                                   class="input_filtrar" style="width: 46%" ng-minlength="4" title="Para filtrar escriba mínimo 4 caracteres">
+                        </div>
+                        <div class="col-xs-11 news_feed" ia-when-scrolled='loadData()'
+                             ng-class="{'loading-data':loadingData == true}">
+
+                            <div class="row col_special news_item" ng-repeat="item in Notificaciones| filter: {titulo: query}"
+                                 ng-click="verNota($event, item, $index)"
+                                 ng-class="{'news_item_selected': item.selected === true}"> 
+                                <div class="col-xs-12" ng-class="{'inactive_item': item.activo === 'false'}">
+                                    <div class="row">
+                                        <div class="col-xs-12 news_resume">
+                                            <div class="news_title">{{item.titulo}}</div>
+                                            <div class="news_weight">PESO:  {{item.archivotamano}}</div>
+                                            <div class="news_format">ORIGINAL: {{item.archivotipo}}</div>
+                                            <div class="news_date">FECHA DE CREACION: {{item.fechacreacion}}</div>
+                                            <ul style="width: 80%; float: left;">
+                                                <li class="news_audio fa-volume-up" ng-class="{'element_present': item.audios && item.audios.length > 0}"></li>
+                                                <li class="news_image fa-camera" ng-class="{'element_present': item.imagenes && item.imagenes.length > 0}"></li>
+                                                <li class="news_video fa-video-camera" ng-class="{'element_present': item.videos && item.videos.length > 0}"></li>
+                                                <li class="news_notes fa-list-ul" ng-class="{'element_present': item.documentos && item.documentos.length > 0}"></li>
+                                                <li class="news_rss fa-rss" ng-class="{'element_present': item.rss && item.rss.length > 0}"></li>
+                                            </ul>
+                                            <div class="avi_agend" ng-if="item.faltaAgenda">
+                                                <p style="font-size: 11px;">Sólo</p>
+                                                <p>Agenda</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- row:user_info -->
+                    <div class="row col_special">
+                        <div class="col-xs-12 footer_tray">
+                            <div class="row name_absence">
+                                <div class="col-xs-4 employee">Nombre:</div>
+                                <div class="col-xs-4 name">{{$root.globals.infoUser.nombre}}</div>
+                            </div>
+                            <div class="row employee_logout">
+                                <div class="col-xs-4 employee_number">No. de empleado:</div>
+                                <div class="col-xs-4 number">{{$root.globals.infoUser.numEmpleado}}</div>
+                                <div class="col-xs-4">
+                                    <button type="button" class="btn logout" ng-click="logout()">CERRAR SESIÓN</button>
+                                </div>            
+                            </div>        
+                        </div>
+                    </div>                    
+                    
+                </div>
+            </div>
+            
+            <div class="col-xs-9" style="padding-left: 60px;" ng-show="clasificacion.idNota">                
+                <div class="row bloque-4-steps-bar">
+                    <div class="col-xs-4 col_special stages_container">
+                        <div ng-class="{'clip_last_step': lblPasoSiguiente === ''}" class="row col_special col_step_menu" ng-show="lblPasoActual !== ''">
+                            <div class="col-xs-12 col_special chevrons_container">
+                                <div class="step_menu_header nActive"><h1>{{lblPasoActual}}</h1></div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-xs-4 col_special stages_container">
+                        <div ng-class="{'clip_last_step': lblPasoPostSiguiente === ''}" class="row col_special col_step_menu2" ng-show="lblPasoSiguiente !== ''">
+                            <div class="col-xs-12 col_special chevrons_container">
+                                <div class="step_menu_header"><h1>{{lblPasoSiguiente}}</h1></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col_special stages_container">
+                        <div class="row col_special col_step_menu3" ng-show="lblPasoPostSiguiente !== ''">
+                            <div class="col-xs-12 col_special chevrons_container">
+                                <div class="step_menu_header"><h1>{{lblPasoPostSiguiente}}</h1></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form name="mainForm" novalidate>
+                    <div class="row col_special app-view-segment-1" app-view-segment="1"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div ia-drop-menu current="clasificacion" class="ia-drop-menu-fixed" class="ia-drop-menu-fixed"></div>
+    <div ia-completitud-etapa style="visibility:hidden;"></div>
+</div>
+

@@ -1,0 +1,29 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": "MX170000001",
+            "nombre": "La calera"
+        },
+        {
+            "id": "MX170000002",
+            "nombre": "Vergel"
+        },
+        {
+            "id": "MX170000003",
+            "nombre": "Emiliano Zapata"
+        },
+        {
+            "id": "MX170000004",
+            "nombre": "Francisco Villa"
+        },
+        {
+            "id": "MX170000005",
+            "nombre": "Universo"
+        }
+    ]
+}
+
+

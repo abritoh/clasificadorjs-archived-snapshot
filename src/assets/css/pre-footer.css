@@ -1,0 +1,64 @@
+/* 
+    Created on : 17-dic-2015, 11:40:04
+    Author     : aantunez
+*/
+.prefooter{
+    position: absolute;
+    bottom: 2.5em;
+    width: 100%;
+    border: 3px double pink;
+    border-image: -webkit-linear-gradient(9deg, rgba(0, 116, 109, 0.75), rgba(0, 116, 109, 0.75)) 20 0 0 0 stretch;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.prefooter p{
+    margin: 0;
+}
+.progress_container{
+    border: 3px double pink;
+    border-image: -webkit-linear-gradient(-90deg, rgba(0, 116, 109, 0.75), rgba(0, 116, 109, 0)) 0 20 0 20 stretch;
+    margin-top: -0.3em;
+    padding: 0.7em 0 0 1em;
+    height: 7em;
+}
+.prefooter .col-xs-3:last-child{
+}
+.no_wrap{
+    white-space: nowrap;
+}
+.col_total_time{
+    padding-top: 0.7em !important;
+    text-align: center;
+}
+.percentage_paragraph p{
+    background: rgba(2, 183, 161,1);
+    line-height: 20px;
+    text-align: center;
+}
+.percentage_paragraph:after {
+    right: 78%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(2, 183, 161, 0);
+    border-right-color: rgba(2, 183, 161, 1);
+    border-width: 7px;
+    margin-top: -7px;
+}
+.total_time{
+    font-size: 1.3em;
+    color: rgba(7, 219, 188,1);
+}
+.border_white{
+    position: absolute;
+    height: 5em;
+    width: 25em;
+    margin-top: 0;
+    border-right: solid 1px rgba(255, 255, 255, 1);
+}

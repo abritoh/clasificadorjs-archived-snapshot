@@ -1,0 +1,30 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": "MX140440072",
+            "nombre": "La ciudad industrial"
+        },
+        {
+            "id": "MX140440173",
+            "nombre": "Fuego nuevo"
+        }
+        ,
+        {
+            "id": "MX170000074",
+            "nombre": "Ciudad Eterna"
+        },
+        {
+            "id": "MX170000079",
+            "nombre": "Mercurio"
+        },
+        {
+            "id": "MX170000080",
+            "nombre": "Jupiter"
+        }
+    ]
+}
+
+

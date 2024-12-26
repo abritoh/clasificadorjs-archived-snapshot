@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- arcbrth@gmail | 2024-1225 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link id="theme-style" rel="stylesheet" href="./assets/css/crt-tree-green.css">
+	
+    <title>Clasificador-AngularJS Tree of Files</title>
+	<style type="text/css" name="theme-right">.controls { position: absolute; top: 20px; right: 20px; z-index: 100; }</style>
+</head>
+<body>
+    <div class="controls">
+        <label for="theme-selector">Theme:</label>
+        <select id="theme-selector" onchange="changeTheme()">
+            <option value="crt-tree-green.css">Green</option>
+            <option value="crt-tree-gray.css">Gray</option>
+            <option value="crt-tree-blue.css">Blue</option>
+            <option value="crt-tree-red.css">Red</option>
+            <option value="crt-tree-wine.css">Wine</option>
+            <option value="crt-tree-yellow.css">Yellow</option>
+            <option value="crt-tree-brown.css">Brown</option>
+            <option value="crt-tree-silver.css">Silver</option>
+            <option value="crt-tree-high-contrast-bw.css">High Contrast B/W</option>
+            <option value="crt-tree-blue-sky.css">Blue Sky</option>
+        </select>
+    </div>
+
+    <div class="crt-screen">        
+        <div class="title">$ ClusterBR : clasificador-angularjs > tree /args</div>        
+        <div class="tree" id="tree">
+            C:.
+            |   app.yaml
+            |   README.md
+            |   tree.txt
+            |   
+            +---.github
+            |   \---workflows
+            |           deploy-clasificador-to-gcp-app-engine.yml
+            |           
+            +---src
+            |   |   index.html
+            |   |   
+            |   +---apps
+            |   |   |   app_admin.js
+            |   |   |   
+            |   |   +---app1
+            |   |   |   \---admin
+        </div>
+        <div class="blinking-cursor" id="cursor">_</div>
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.fetch) {
+                fetch(RESOURCE_NAME)
+                    .then(response => response.text())
+                    .then(text => {renderData(text);})
+                    .catch(error => console.error(ERR_LOADING, error));
+            } else {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', RESOURCE_NAME, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        renderData(xhr.responseText);
+                    }
+                };
+                xhr.onerror = function () {
+                    console.error(ERR_LOADING, xhr.statusText);
+                };
+                xhr.send();
+            }
+        });
+        function renderData(text) {
+            document.getElementById('tree').textContent = chkAccentedWrds(text);
+        }
+        function chkAccentedWrds(text) {
+            const replacements = {'versi.n':'version', 'Versi.n':'Version', 'n.mero':'numero', 'N.mero':'Numero'};
+            for (const [accented, unaccented] of Object.entries(replacements)) {
+                const regex = new RegExp(accented, 'gi');
+                text = text.replace(regex, unaccented);
+            } return text;
+        }
+        function loadRandomTheme() {
+            const randomIndex = Math.floor(Math.random() * themes.length);
+            const themeName = themes[randomIndex];
+            document.getElementById('theme-style').setAttribute('href', THEME_PATH+themeName);
+			document.getElementById('theme-selector').selectedIndex = randomIndex;
+        }
+        function changeTheme() {
+            const themeSelector = document.getElementById('theme-selector');
+            const selectedTheme = themeSelector.value;
+            document.getElementById('theme-style').setAttribute('href', THEME_PATH+selectedTheme);
+        }		
+        const RESOURCE_NAME = './app-tree.txt',
+		      THEME_PATH = './assets/css/',
+			  ERR_LOADING = 'Error loading the tree structure:';
+		const themes = 
+			['crt-tree-green.css', 'crt-tree-gray.css', 'crt-tree-blue.css', 'crt-tree-red.css', 'crt-tree-wine.css', 
+			'crt-tree-yellow.css', 'crt-tree-brown.css', 'crt-tree-silver.css', 'crt-tree-high-contrast-bw.css', 'crt-tree-blue-sky.css'];
+		(function(){loadRandomTheme();})();
+    </script>        
+</body>
+</html>

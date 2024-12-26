@@ -1,0 +1,47 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "idEvento": "unoUS3Qs3s",
+            "nombreEvento": "Mali busca a sus peregrinos tras la tragedia de La Meca",
+            "activo": "true",
+            "idPais": "MX",
+            "pais": "Mexico",
+            "idEstado": "MX09",
+            "estado": "Distrito Federal",
+            "idMunicipio": "MX09017",
+            "municipio": "Venustiano Carranza",
+            "idLocalidad": "",
+            "localidad": "",
+            "tipoLocalidad": "",
+            "idColonia": "",
+            "colonia": "",
+            "fecha":"12/02/2016",
+            "hora": "09:30:21",
+            "prioridad": "Alta"
+        },
+        {
+            "idEvento": "dosUS3Qs3s",
+            "nombreEvento": "Clasificacion del TRI sorprende a locales",
+            "activo": "false",
+            "idPais": "MX",
+            "pais": "Mexico",
+            "idEstado": "MX09",
+            "estado": "Distrito Federal",
+            "idMunicipio": "MX09017",
+            "municipio": "Venustiano Carranza",
+            "idLocalidad": "",
+            "localidad": "",
+            "tipoLocalidad": "",
+            "idColonia": "",
+            "colonia": "",
+            "fecha":"05/09/2012",
+            "hora": "15:50:20",
+            "prioridad": "Media"
+        }
+    ]
+}
+
+

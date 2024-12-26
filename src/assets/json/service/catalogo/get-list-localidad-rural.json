@@ -1,0 +1,30 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": "MX140440050",
+            "nombre": "Rancho tres cruces"
+        },
+        {
+            "id": "MX140440175",
+            "nombre": "La loma"
+        }
+        ,
+        {
+            "id": "MX170000003",
+            "nombre": "El puente"
+        },
+        {
+            "id": "MX170000004",
+            "nombre": "Tres cruces"
+        },
+        {
+            "id": "MX170000005",
+            "nombre": "El nogal"
+        }
+    ]
+}
+
+

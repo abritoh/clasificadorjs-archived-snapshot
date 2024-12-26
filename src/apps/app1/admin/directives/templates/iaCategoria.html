@@ -1,0 +1,36 @@
+<div ng-form name="this_form">
+    <div class="col-xs-12 col_special" style="margin-bottom: 1em;">
+        <div ng-class="{'ui-select-disabled-event':dx.disable && dx.deep>=1}">
+            <ui-select ng-model="dx.tipoCategoria">
+                <ui-select-match placeholder="*SELECCIONE CATEGORIA">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_tipo_categoria">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div ng-show="get_list_subtipo_categoria.length > 0 && dx.tipoCategoria" ng-class="{'ui-select-disabled-event':dx.disable && dx.deep>=2}">
+            <ui-select ng-model="dx.subTipoCategoria">
+                <ui-select-match placeholder="*SELECCIONE TIPO DE CATEGORIA">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_subtipo_categoria">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div ng-show="get_list_subsubtipo_categoria.length > 0 && dx.subTipoCategoria" ng-class="{'ui-select-disabled-event':dx.disable && dx.deep>=3}">
+            <ui-select ng-model="dx.subSubTipoCategoria">
+                <ui-select-match placeholder="*SELECCIONE SUBTIPO DE CATEGORIA">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_subsubtipo_categoria | filter: $select.search">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>        
+        <div ng-show="get_list_subsubsubtipo_categoria.length > 0 && dx.subSubTipoCategoria" ng-class="{'ui-select-disabled-event':dx.disable && dx.deep>=4}">
+            <ui-select ng-model="dx.subSubSubTipoCategoria">
+                <ui-select-match placeholder="*SELECCIONE CONJUNTOS">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_subsubsubtipo_categoria | filter: $select.search">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>           
+    </div>
+</div>

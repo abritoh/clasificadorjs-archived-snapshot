@@ -1,0 +1,55 @@
+
+<div ng-form name="this_form">
+    <div class="col-xs-12 col_special" style="margin-bottom: 0.5em;">
+        <div>
+            <ui-select ng-model="dx.pais" class="iaUbicacionGeneral_pais">
+                <ui-select-match placeholder="*PAÍS">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_pais | filter: $select.search">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div ng-show="get_list_estado.length > 0 && dx.pais">
+            <ui-select ng-model="dx.estado">
+                <ui-select-match placeholder="{{opt_str_edo}}SELECCIONE ESTADO">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_estado | filter: $select.search">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div ng-show="get_list_municipio.length > 0 && dx.estado">
+            <ui-select ng-model="dx.municipio">
+                <ui-select-match placeholder="{{opt_str_mpo}}SELECCIONE MUNICIPIO">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_municipio | filter: $select.search">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div ng-show="get_list_localidad_urbana.length > 0 && dx.municipio" ng-class="{'ui-select-disabled':!dx.localidadUrbana}">
+            <ui-select ng-model="dx.localidadUrbana">
+                <ui-select-match placeholder="SELECCIONE LOCALIDAD URBANA">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_localidad_urbana | filter: $select.search">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <div ng-show="get_list_localidad_rural.length > 0 && dx.municipio" ng-class="{'ui-select-disabled':!dx.localidadRural}">
+            <ui-select ng-model="dx.localidadRural">
+                <ui-select-match placeholder="SELECCIONE LOCALIDAD RURAL">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_localidad_rural | filter: $select.search">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>        
+        <div ng-show="get_list_colonia.length > 0 && dx.municipio" ng-class="{'ui-select-disabled':!dx.colonia}">
+            <ui-select ng-model="dx.colonia">
+                <ui-select-match placeholder="SELECCIONE COLONIA">{{$select.selected.nombre}}</ui-select-match>
+                <ui-select-choices repeat="x in get_list_colonia | filter: $select.search">
+                    <span>{{x.nombre}}</span>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+    </div>
+</div>
+
+

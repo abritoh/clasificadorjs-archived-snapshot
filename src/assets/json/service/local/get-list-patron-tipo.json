@@ -1,0 +1,49 @@
+{
+    "success": true,
+    "code": "0",
+    "msg": "ok",
+    "data": [
+        {
+            "id": "",
+            "nombre": "*SELECCIONE"
+        },        
+        {
+            "id": "titulo",
+            "nombre": "titulo"
+        },
+        {
+            "id": "autor",
+            "nombre": "autor"
+        },
+        {
+            "id": "lugar",
+            "nombre": "lugar"
+        },
+        {
+            "id": "fecha",
+            "nombre": "fecha"
+        },
+        {
+            "id": "contenido",
+            "nombre": "contenido"
+        },
+        {
+            "id": "documento",
+            "nombre": "documento"
+        },
+        {
+            "id": "imagen",
+            "nombre": "imagen"
+        },
+        {
+            "id": "audio",
+            "nombre": "audio"
+        },
+        {
+            "id": "video",
+            "nombre": "video"
+        }
+    ]
+}
+
+
